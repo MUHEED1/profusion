@@ -13,8 +13,9 @@ export default function Login() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-cover bg-center" style={{ backgroundImage: "url('images/background/loginbg.jpg')" }}>
-      <div className="bg-white bg-opacity-80 p-8 rounded-lg shadow-lg max-w-md w-full">
+    <div className="flex items-center justify-center min-h-screen bg-cover bg-center" style={{ backgroundImage: "url('images/background/bg.jpg')" }}>
+        <div className="absolute h-full w-full backdrop-blur-sm"></div>
+      <div className="bg-white bg-opacity-80 relative z-10 p-8 rounded-lg shadow-lg max-w-md w-full">
         <h1 className="text-3xl font-bold text-center mb-6 text-pink-600">Welcome to Our Wedding</h1>
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
