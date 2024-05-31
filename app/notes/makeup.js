@@ -11,7 +11,19 @@ const Makeup = () => {
 6. Smokey Eye Bridal Makeup
 7. Nude Bridal Makeup
 8. Hijab bridal makeup
+
+<div>Deccan Caters
+Atul Caters
+Hyderabad caters
+Hyderis events and caters
+al rayyan caters
+kitchen caters
+Risers events and more
+Iqbal catering
+Shahi Caters
+Maqbool Caters</div>
     </div>
+   
   )
 }
 

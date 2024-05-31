@@ -17,7 +17,7 @@ const Navbar = () => {
             <Padding>
                 <div className="container mx-auto flex items-center justify-between">
                     <div className="flex gap-[25rem] items-center">
-                        <img src="/logo.png" alt="Logo" className="h-8 mr-4" />
+                        <Image src="/images/logo3.jpg" height={1000} width={1000} alt="Logo" className="h-8 w-8 mr-4" />
                         <ul className="flex">
                             <li className="mr-6">
                                 <Link href="/">
