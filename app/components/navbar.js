@@ -18,7 +18,7 @@ const Navbar = () => {
                 <div className="container mx-auto flex items-center justify-between">
                     <div className="flex gap-[25rem] items-center">
                         {/* <Image src="/images/logo3.jpg" height={1000} width={1000} alt="Logo" className="h-8 w-8 mr-4" /> */}
-                        <div className=''>ForeverJoined</div>
+                        <div className='font-scr text-'>ForeverJoined</div>
                         <ul className="flex gap-10">
                             <li className="mr-6">
                                 <Link href="/">
