@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link';
 import React, { useState } from 'react'
 
 const Walima = () => {
@@ -39,9 +40,16 @@ const Walima = () => {
                focus:border-pink-500 sm:text-sm rounded-md"
             >
               <option value="none">Select Catering Service</option>
-              <option value="service1 ">Diamond</option>
-              <option value="service2">Gold</option>
-              <option value="service3">Silver</option>
+              <option value="service1 "> Deccan Caters</option>
+              <option value="service2">Atul Caters</option>
+              <option value="service3"> Hyderabad caters</option>
+              <option value="service3"> Hyderis events and caters</option>
+              <option value="service3">al rayyan caters </option>
+              <option value="service3"> kitchen caters</option>
+              <option value="service3">Risers events and more </option>
+              <option value="service3"> Iqbal catering</option>
+              <option value="service3"> Shahi Caters</option>
+
             </select>
           </div>
           
@@ -58,9 +66,8 @@ const Walima = () => {
               className="mt-1 block w-full pl-3 pr-10 py-2 text-base text-black border-gray-300 focus:outline-none focus:ring-pink-500 focus:border-pink-500 sm:text-sm rounded-md"
             >
               <option value="none">Select Invitation Card</option>
-              <option value="card1">Card 1</option>
-              <option value="card2">Card 2</option>
-              <option value="card3">Card 3</option>
+              <option  value="card1"><Link href={"/"}> select from catlog</Link></option>
+            
             </select>
           </div>
     
@@ -76,9 +83,36 @@ const Walima = () => {
               className="mt-1 block w-full pl-3 pr-10 py-2 text-base text-black border-gray-300 focus:outline-none focus:ring-pink-500 focus:border-pink-500 sm:text-sm rounded-md"
             >
               <option value="none">Select Venue</option>
-              <option value="venue1">Venue 1</option>
-              <option value="venue2">Venue 2</option>
-              <option value="venue3">Venue 3</option>
+            
+
+              <option value="venue1"> NKNR Gardens</option>
+              <option value="venue2">Metro Classic Garden </option>
+              <option value="venue3">Chowmahalla Palace</option>
+              <option value="venue3">Central Court Convention Hall</option>
+              <option value="venue3">Pvr Convention Centre</option>
+              <option value="venue3">S V Convention</option>
+              <option value="venue3">The Vintage Palace</option>
+              <option value="venue3">Paradise Garden</option>
+              <option value="venue3">Mughals Banquet Hall</option>
+              <option value="venue3">Down Town Club Halls</option>
+              <option value="venue3">City Convention Center</option>
+              <option value="venue3">Nr Convention Hall</option>
+              <option value="venue3">Hamara Family Garden Hall</option>
+              <option value="venue3">SS Grand Convention</option>
+              <option value="venue3">H F Convention</option>
+              <option value="venue3">City Convention Center</option>
+              <option value="venue3">Mallika Convention</option>
+              <option value="venue3">Raj Mahal Function Hall</option>
+              <option value="venue3">Red Rose Palace</option>
+              <option value="venue3">Krystal Gardens</option>
+              <option value="venue3">The Vintage Palace</option>
+              <option value="venue3">JRC Conventions</option>
+              <option value="venue3">Subham Convention Centre</option>
+              <option value="venue3">  Kings Kohinoor Convention</option>
+              <option value="venue3"> N Convention</option>
+
+
+
             </select>
           </div>
     
