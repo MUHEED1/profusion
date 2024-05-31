@@ -15,9 +15,9 @@ export default function SignUp() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-cover bg-center" style={{ backgroundImage: "url('/wedding-background.jpg')" }}>
-      <div className="bg-white bg-opacity-80 p-8 rounded-lg shadow-lg max-w-md w-full">
-        <h1 className="text-3xl font-bold text-center mb-6 text-pink-600">Sign Up</h1>
+    <div className="flex items-center justify-center min-h-screen bg-[url('/images/signupbg.jpeg')] bg-cover  ">
+      <div className="bg-white bg-opacity-90 p-8 rounded-lg shadow-lg max-w-md w-full">
+        <h1 className="text-4xl font-bold text-center mb-8 text-pink-600">Sign Up</h1>
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name:</label>
@@ -27,7 +27,7 @@ export default function SignUp() {
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
-              className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"
+              className="mt-1 block w-full p-3 text-gray-800 bg-gray-100 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"
             />
           </div>
           <div>
@@ -38,7 +38,7 @@ export default function SignUp() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"
+              className="mt-1 block w-full p-3 text-gray-800 bg-gray-100 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"
             />
           </div>
           <div>
@@ -49,12 +49,12 @@ export default function SignUp() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
-              className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"
+              className="mt-1 block w-full p-3 text-gray-800 bg-gray-100 border border-gray-300 rounded-md shadow-sm focus:ring-pink-500 focus:border-pink-500"
             />
           </div>
           <button
             type="submit"
-            className="w-full py-2 px-4 bg-pink-600 text-white font-semibold rounded-md hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
+            className="w-full py-3 px-4 bg-gradient-to-r from-pink-500 to-red-500 text-white font-semibold rounded-md hover:from-pink-600 hover:to-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
           >
             Sign Up
           </button>
