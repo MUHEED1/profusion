@@ -13,12 +13,12 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="fixed z-10 top-0 py-4 w-full bg-white/45">
+        <nav className="fixed z-10 top-0 py-4 w-full bg-white/45 ">
             <Padding>
                 <div className="container mx-auto flex items-center justify-between">
                     <div className="flex gap-[25rem] items-center">
                         {/* <Image src="/images/logo3.jpg" height={1000} width={1000} alt="Logo" className="h-8 w-8 mr-4" /> */}
-                        <div className='font-scr text-'>ForeverJoined</div>
+                        <div className='font-scr text-2xl font-extrabold text-black'>ForeverJoined</div>
                         <ul className="flex gap-10">
                             <li className="mr-6">
                                 <Link href="/">
