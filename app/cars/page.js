@@ -4,28 +4,24 @@ import React, { useState } from 'react'
 
 const Page = () => {
     const images = [
-        "/images/stage/1.jpeg",
-        "/images/stage/3.jpeg",
-        "/images/stage/9.jpeg",
-        "/images/stage/4.jpeg",
-        "/images/stage/7.jpeg",
-        "/images/stage/2.jpeg",
-        "/images/stage/5.jpeg",
-        "/images/stage/6.jpeg",
-        "/images/stage/8.jpeg",
-        "/images/stage/10.jpeg",
-        "/images/stage/11.jpeg",
-        "/images/stage/12.jpeg",
-        "/images/stage/13.jpeg",
-        "/images/stage/14.jpeg",
-        "/images/stage/16.jpeg",
-        "/images/stage/15.jpeg",
+        "/images/stage/s1.jpeg",
+        "/images/stage/s3.jpeg",
+        "/images/stage/s9.jpeg",
+        "/images/stage/s4.jpeg",
+        "/images/stage/s7.jpeg",
+        "/images/stage/s2.jpeg",
+        "/images/stage/s5.jpeg",
+        "/images/stage/s6.jpeg",
+        "/images/stage/s8.jpeg",
+        "/images/stage/s10.jpeg",
+        "/images/stage/s11.jpeg",
+        "/images/stage/s12.jpeg",
+        "/images/stage/s13.jpeg",
+        "/images/stage/s14.jpeg",
+        "/images/stage/s16.jpeg",
+        "/images/stage/s15.jpeg",
 
 
-
-     
-
-       
       ];
       
      
