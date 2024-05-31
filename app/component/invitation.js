@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link';
 import React, { useState } from 'react'
 
 const Invitation = () => {
@@ -40,6 +41,20 @@ const Invitation = () => {
                 onClick={() => handleImageClick(index)}
               />
             ))}
+             <div className=' flex   justify-center pb-10'>
+            <div className=' space-x-6'>
+            <button type="cars" className="w-[5rem] mx-auto py-2 px-4 bg-pink-800 text-white font-semibold rounded-md hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-500">
+            <Link href={"/invatation"}>
+           Skip
+</Link>
+          </button>
+          <button type="cars" className="w-[5rem] mx-auto py-2 px-4 bg-pink-500 text-white font-semibold rounded-md hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-500">
+            <Link href={"/invitation"}>
+            Submit
+</Link>
+          </button>
+          </div>
+          </div>
           </div>
         );
       };
