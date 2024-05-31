@@ -1,23 +1,25 @@
-import React from 'react'
+'use client'
+import Link from 'next/link';
+import React, { useState } from 'react'
 
 const Page = () => {
     const images = [
-        "/images/groom/suite/1.jpeg",
-        "/images/groom/suite/3.jpeg",
-        "/images/groom/suite/9.jpeg",
-        "/images/groom/suite/4.jpeg",
-        "/images/groom/suite/7.jpeg",
-        "/images/groom/suite/2.jpeg",
-        "/images/groom/suite/5.jpeg",
-        "/images/groom/suite/6.jpeg",
-        "/images/groom/suite/8.jpeg",
-        "/images/groom/suite/10.jpeg",
-        "/images/groom/suite/11.jpeg",
-        "/images/groom/suite/12.jpeg",
-        "/images/groom/suite/13.jpeg",
-        "/images/groom/suite/14.jpeg",
-        "/images/groom/suite/16.jpeg",
-        "/images/groom/suite/15.jpeg",
+        "/images/stage/1.jpeg",
+        "/images/stage/3.jpeg",
+        "/images/stage/9.jpeg",
+        "/images/stage/4.jpeg",
+        "/images/stage/7.jpeg",
+        "/images/stage/2.jpeg",
+        "/images/stage/5.jpeg",
+        "/images/stage/6.jpeg",
+        "/images/stage/8.jpeg",
+        "/images/stage/10.jpeg",
+        "/images/stage/11.jpeg",
+        "/images/stage/12.jpeg",
+        "/images/stage/13.jpeg",
+        "/images/stage/14.jpeg",
+        "/images/stage/16.jpeg",
+        "/images/stage/15.jpeg",
 
 
 

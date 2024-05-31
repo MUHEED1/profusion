@@ -31,6 +31,7 @@ const Invitation = () => {
         };
       
         return (
+            <div>
           <div className="grid grid-cols-4 gap-4 p-4">
             {images.map((src, index) => (
               <img
@@ -44,15 +45,16 @@ const Invitation = () => {
              <div className=' flex   justify-center pb-10'>
             <div className=' space-x-6'>
             <button type="cars" className="w-[5rem] mx-auto py-2 px-4 bg-pink-800 text-white font-semibold rounded-md hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-500">
-            <Link href={"/invatation"}>
+            <Link href={"/cars"}>
            Skip
 </Link>
           </button>
           <button type="cars" className="w-[5rem] mx-auto py-2 px-4 bg-pink-500 text-white font-semibold rounded-md hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-500">
-            <Link href={"/invitation"}>
+            <Link href={"/cars"}>
             Submit
 </Link>
           </button>
+          </div>
           </div>
           </div>
           </div>
