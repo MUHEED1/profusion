@@ -13,19 +13,20 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="fixed top-0 py-4 w-full">
+        <nav className="fixed z-10 top-0 py-4 w-full bg-white/45">
             <Padding>
                 <div className="container mx-auto flex items-center justify-between">
                     <div className="flex gap-[25rem] items-center">
-                        <Image src="/images/logo3.jpg" height={1000} width={1000} alt="Logo" className="h-8 w-8 mr-4" />
-                        <ul className="flex">
+                        {/* <Image src="/images/logo3.jpg" height={1000} width={1000} alt="Logo" className="h-8 w-8 mr-4" /> */}
+                        <div className=''>ForeverJoined</div>
+                        <ul className="flex gap-10">
                             <li className="mr-6">
                                 <Link href="/">
-                                    <div className="text-white hover:text-gray-300">Home</div>
+                                    <div className="text-black hover:text-gray-700">Home</div>
                                 </Link>
                             </li>
                             <li className="relative mr-6">
-                                <div className="text-white cursor-pointer hover:text-gray-300" onClick={toggleDropdown}>Services</div>
+                                <div className="text-black cursor-pointer hover:text-gray-700" onClick={toggleDropdown}>Book Now</div>
                                 {isDropdownOpen && (
                                     <div className="absolute top-full left-0 bg-white py-2 px-4 rounded shadow-md">
                                         <Link href="/bride">
@@ -39,17 +40,17 @@ const Navbar = () => {
                             </li>
                             <li>
                                 <Link href="/contact">
-                                    <div className="text-white hover:text-gray-300">Contact</div>
+                                    <div className="text-black hover:text-gray-700">Contact</div>
                                 </Link>
                             </li>
                         </ul>
                     </div>
-                    <div className="flex items-center">
+                    <div className="flex gap-10 items-center">
                         <Link href="/login">
-                            <div className="text-white mr-4 hover:text-gray-300">Login</div>
+                            <div className="text-black mr-4 hover:text-gray-300">Login</div>
                         </Link>
                         <Link href="/signup">
-                            <div className="text-white hover:text-gray-300">Sign Up</div>
+                            <div className="text-black hover:text-gray-300">Sign Up</div>
                         </Link>
                     </div>
                 </div>

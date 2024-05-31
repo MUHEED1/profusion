@@ -15,7 +15,7 @@ export default function SignUp() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-[url('/images/signupbg.jpeg')] bg-cover  ">
+    <div className="flex items-center justify-center min-h-screen bg-[url('/images/background/loginbg.jpg')] bg-cover  ">
       <div className="bg-white bg-opacity-90 p-8 rounded-lg shadow-lg max-w-md w-full">
         <h1 className="text-4xl font-bold text-center mb-8 text-pink-600">Sign Up</h1>
         <form onSubmit={handleSubmit} className="space-y-6">

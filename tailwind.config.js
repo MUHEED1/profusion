@@ -9,7 +9,8 @@ module.exports = {
     extend: {
       fontFamily:{
         scr:"Scriptina",
-        scra:"Scriptina - Alternates"
+        scra:"Scriptina - Alternates",
+        gel:"Gelica",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
