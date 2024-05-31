@@ -1,14 +1,17 @@
 import Link from 'next/link';
 import Padding from './padding';
+import Image from 'next/image';
+
 
 const Navbar = () => {
     return (
         <nav className="fixed top-0 py-4 w-full">
             <Padding>
+               
 
             <div className="container mx-auto flex items-center justify-between">
                 <div className="flex gap-[25rem] items-center">
-                    <img src="/logo.png" alt="Logo" className="h-8 mr-4" />
+                    <Image src="/images/our.logo.jpg" width={1000} height={1000} alt="Logo" className="h-8 w-8 mr-4" />
                     <ul className="flex">
                         <li className="mr-6">
                             <Link href="/">
