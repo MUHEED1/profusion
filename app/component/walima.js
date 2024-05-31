@@ -28,7 +28,7 @@ const Walima = () => {
           <h1 className="text-3xl font-bold mb-6 text-center text-pink-600">Event Planning Services</h1>
           
           <div className="mb-4">
-            <label htmlFor="catering" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="catering" className="block text-xl font-medium text-gray-700">
               Catering Services:
             </label>
             <select
@@ -36,7 +36,7 @@ const Walima = () => {
               name="catering"
               value={formData.catering}
               onChange={handleChange}
-              className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-pink-500 text-black
+              className="mt-1 block w-full pl-3 pr-10 py-2 text-lg border-gray-300 focus:outline-none focus:ring-pink-500 text-black
                focus:border-pink-500 sm:text-sm rounded-md"
             >
               <option value="none">Select Catering Service</option>
@@ -63,7 +63,7 @@ const Walima = () => {
               name="invitation"
               value={formData.invitation}
               onChange={handleChange}
-              className="mt-1 block w-full pl-3 pr-10 py-2 text-base text-black border-gray-300 focus:outline-none focus:ring-pink-500 focus:border-pink-500 sm:text-sm rounded-md"
+              className="mt-1 block w-full pl-3 pr-10 py-2 text-lg text-black border-gray-300 focus:outline-none focus:ring-pink-500 focus:border-pink-500 sm:text-sm rounded-md"
             >
               <option value="none">Select Invitation Card</option>
               <option  value="card1"><Link href={"/"}> select from catlog</Link></option>
@@ -72,7 +72,7 @@ const Walima = () => {
           </div> */}
     
           <div className="mb-4">
-            <label htmlFor="venue" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="venue" className="block text-xl font-medium text-gray-700">
               Venue:
             </label>
             <select
@@ -80,7 +80,7 @@ const Walima = () => {
               name="venue"
               value={formData.venue}
               onChange={handleChange}
-              className="mt-1 block w-full pl-3 pr-10 py-2 text-base text-black border-gray-300 focus:outline-none focus:ring-pink-500 focus:border-pink-500 sm:text-sm rounded-md"
+              className="mt-1 block w-full pl-3 pr-10 py-2 text-lg text-black border-gray-300 focus:outline-none focus:ring-pink-500 focus:border-pink-500 sm:text-sm rounded-md"
             >
               <option value="none">Select Venue</option>
             
@@ -117,17 +117,17 @@ const Walima = () => {
           </div>
     
           <div className="mb-4">
-            <label htmlFor="cars" className="block text-sm font-medium text-gray-700">
-              Cars:
+            <label htmlFor="cars" className="block text-xl font-medium text-gray-700">
+              Guests:
             </label>
             <select
               id="cars"
               name="cars"
               value={formData.cars}
               onChange={handleChange}
-              className="mt-1 block w-full pl-3 pr-10 py-2 text-base text-black border-gray-300 focus:outline-none focus:ring-pink-500 focus:border-pink-500 sm:text-sm rounded-md"
+              className="mt-1 block w-full pl-3 pr-10 py-2 text-lg text-black border-gray-300 focus:outline-none focus:ring-pink-500 focus:border-pink-500 sm:text-sm rounded-md"
             >
-              <option value="none">No f Guests</option>
+              <option value="none">No of Guests</option>
               <option value="car1">100 - 250</option>
               <option value="car2">250 - 500</option>
               <option value="car3">500 - 750</option>
