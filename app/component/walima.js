@@ -24,7 +24,7 @@ const Walima = () => {
       };
     
       return (
-        <form onSubmit={handleSubmit} className="max-w-xl mx-auto p-6 bg-white rounded-lg shadow-md border-2 border-pink-200">
+        <form onSubmit={handleSubmit} className="max-w-xl mt-[20rem] mx-auto p-6 bg-white rounded-lg shadow-md border-2 border-pink-200">
           <h1 className="text-3xl font-bold mb-6 text-center text-pink-600">Event Planning Services</h1>
           
           <div className="mb-4">
@@ -54,7 +54,7 @@ const Walima = () => {
           </div>
           
     
-          <div className="mb-4">
+          {/* <div className="mb-4">
             <label htmlFor="invitation" className="block text-sm font-medium text-gray-700">
               Invitation Cards:
             </label>
@@ -69,7 +69,7 @@ const Walima = () => {
               <option  value="card1"><Link href={"/"}> select from catlog</Link></option>
             
             </select>
-          </div>
+          </div> */}
     
           <div className="mb-4">
             <label htmlFor="venue" className="block text-sm font-medium text-gray-700">
@@ -127,15 +127,20 @@ const Walima = () => {
               onChange={handleChange}
               className="mt-1 block w-full pl-3 pr-10 py-2 text-base text-black border-gray-300 focus:outline-none focus:ring-pink-500 focus:border-pink-500 sm:text-sm rounded-md"
             >
-              <option value="none">Select Car</option>
-              <option value="car1">Car 1</option>
-              <option value="car2">Car 2</option>
-              <option value="car3">Car 3</option>
+              <option value="none">No f Guests</option>
+              <option value="car1">100 - 250</option>
+              <option value="car2">250 - 500</option>
+              <option value="car3">500 - 750</option>
+              <option value="car3">750 - 1000</option>
+              {/* <option value="car3">1000</option> */}
+
             </select>
           </div>
     
           <button type="submit" className="w-full py-2 px-4 bg-pink-500 text-white font-semibold rounded-md hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-500">
+            <Link href={"/suite"}>
             Submit
+</Link>
           </button>
         </form>
       );

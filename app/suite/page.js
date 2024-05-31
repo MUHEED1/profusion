@@ -1,4 +1,5 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 
 const Page = () => {
  
@@ -9,10 +10,10 @@ const Page = () => {
         "/images/groom/suite/4.jpg",
         // "/images/groom/suite/5.jpg",
         // "/images/groom/suite/6.jpg",
-        "/images/groom/suite/7.jpg",
+        "/images/groom/suite/7.jpeg",
         // "/images/groom/suite/8.jpg",
-        "/images/groom/suite/9.jpg",
-        "/images/groom/suite/10.jpg",
+        "/images/groom/suite/9.jpeg",
+        // "/images/groom/suite/10.jpeg",
 
      
 
@@ -37,7 +38,7 @@ const Page = () => {
                 onClick={() => handleImageClick(index)}
               />
             ))}
-            
+
           </div>
         );
       };
