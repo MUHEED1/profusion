@@ -1,9 +1,12 @@
+import Image from "next/image";
 import React from "react";
 
-const Detailscard = () => {
+const Detailscard = ({ src }) => {
   return (
-    <div className="p-[0.7rem] w-[25%] bg-[#F9F9F9] rounded-2xl shadow-xl">
-      <div className="w-[full] h-[230px] bg-[#838080] rounded-xl mb-5"></div>
+    <div className="p-[0.7rem]   bg-gradient-to-b from-[#ebe8e8] to-[#6b696954] rounded-2xl shadow-xl">
+      <div className="w-[full] h-[230px]   mb-5">
+        <Image src={src} className=" object-cover rounded-xl h-[230px]" />
+      </div>
       <div className="text-[0.85rem] flex justify-center rounded-[999px] font-Matter bg-[#E1E1E1] p-[0.7rem] text-[#000000]  w-[20%] ">
         Lable
       </div>
