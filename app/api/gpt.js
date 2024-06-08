@@ -4,7 +4,7 @@ async function talkWith(conversation) {
     try {
         // Initialize the OpenAI API with the API key from environment variable
         const configuration = new Configuration({
-            apiKey: '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',
+            apiKey: '',
         });
         const openai = new OpenAIApi(configuration);
         // Send the message to GPT-3.5 Turbo
