@@ -14,7 +14,7 @@ const Navbar = () => {
       <motion.div ref={ref}
       initial={{scaleX:0}}
       animate={{scaleX: inview ? 1:0}}
-      transition={{duration:0.3}}
+      transition={{duration:1}}
        className="rounded-[999px] overflow-hidden bg-[#00000033] px-[2.5rem] py-[1rem] flex justify-between gap-[5rem]">
         <div className=" font-Matter text-[#FFFFFF] text-[1rem] cursor-pointer">
           Home

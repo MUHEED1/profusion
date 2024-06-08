@@ -1,7 +1,6 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import { motion, useMotionValue, useTransform } from 'framer-motion';
-import Image from 'next/image';
 
 const Okay = () => {
   const [mouseX, setMouseX] = useState(0);
@@ -25,9 +24,6 @@ const Okay = () => {
     y.set(mouseY);
   }, [mouseX, mouseY, x, y]);
 
-  const translateX = useTransform(x, [0, window.innerWidth], [-15, 15]);
-  const translateY = useTransform(y, [0, window.innerHeight], [-15, 15]);
-
   return (
     <motion.div className='h-screen w-screen'
       onMouseMove={handleMouseMove}
@@ -39,91 +35,7 @@ const Okay = () => {
        
       }}
     >
-       <motion.div
-        style={{
-          position: 'absolute',
-          right: '8rem',
-          top: '8rem',
-          translateX: translateX,
-          translateY: translateY,
-          rotateX:10,
-          rotateY:-20,
-          transformStyle: 'preserve-3d',
-        }}
-      >
-        <Image height={200} width={200} src="/images/p2.jpg" alt="Image description" />
-      </motion.div>
-       <motion.div
-        style={{
-          position: 'absolute',
-          left: '5rem',
-          top: '8rem',
-          translateX: translateX,
-          translateY: translateY,
-          rotateX:-20,
-          rotateY:15,
-          transformStyle: 'preserve-3d',
-        }}
-      >
-        <Image height={170} width={170} src="/images/p1.jpg" alt="Image description" />
-      </motion.div>
-       <motion.div
-        style={{
-          position: 'absolute',
-          left: '45%',
-          bottom: '2rem',
-          translateX: translateX,
-          translateY: translateY,
-          rotateX:25,
-          rotateY:0,
-          transformStyle: 'preserve-3d',
-        }}
-      >
-        <Image height={210} width={210} src="/images/p3.jpg" alt="Image description" />
-      </motion.div>
-       <motion.div
-        style={{
-          position: 'absolute',
-          bottom: '4rem',
-          right: '8rem',
-          x: translateX,
-          y: translateY,
-          rotateX:-10,
-          rotateY:-10,
-          transformStyle: 'preserve-3d',
-        }}
-      >
-        <video autoPlay loop playsInline muted height={200} width={200} src="/images/vd1.mp4" alt="Image description" />
-      </motion.div>
-       <motion.div
-        style={{
-          position: 'absolute',
-          top: '4rem',
-          right: '45%',
-          x: translateX,
-          y: translateY,
-          rotateX:-10,
-          rotateY:-10,
-          transformStyle: 'preserve-3d',
-        }}
-      >
-        <video autoPlay loop playsInline muted height={200} width={200} src="/images/vd3.mp4" alt="Image description" />
-      </motion.div>
-       <motion.div
-        style={{
-          position: 'absolute',
-          bottom: '-5rem',
-          left: '2rem',
-          translateX: translateX,
-          translateY: translateY,
-          rotateX:-15,
-          rotateY:-10,
-          transformStyle: 'preserve-3d',
-        }}
-      >
-        <video className=' overflow-hidden max-h-[10rem]' autoPlay loop playsInline muted height={200} width={200} src="/images/vd2.mp4" alt="Image description" />
-      </motion.div>
-      <motion.div className=' absolute  -translate-y-1/2  top-[30%] duration-100 ease-linear'
+      <motion.div className=' duration-100 ease-linear'
         style={{
           rotateX: rotateX,
           rotateY: rotateY,

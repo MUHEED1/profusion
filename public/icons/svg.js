@@ -12,13 +12,9 @@ const Svg = () => {
   const pathLength = useTransform(scrollYProgress, [0.23, 0.7], [0, 1]);
 
   return (
-    <div className='h-[200vh] w-full mx-auto pt-[4rem] flex flex-col items-center justify-center' ref={ref}>
-        <div style={{background: 'linear-gradient(to bottom, rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.7) 80%, transparent)',
-            paddingTop:"5rem"
-        }} className='flex w-full justify-center sticky z-20 top-0 pt-[3rem]'>
-        <div style={{maxWidth:"35rem",}} className=' bg-gradient-to-b from-[#0000007e] to-transparent font-Avant fontstyle text-[2.5rem] text-center max-w-[10rem] font-semibold  '>UNDERSTAND ROADMAPS LIKE NEVER BEFORE</div>
-        </div>
-      <svg style={{marginTop:"2rem"}} className=' mt-[2rem]' width="1237" height="2098" viewBox="0 0 1237 2098" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div className='h-[200vh] w-full mx-auto flex justify-center' ref={ref}>
+        <div></div>
+      <svg width="1237" height="2098" viewBox="0 0 1237 2098" fill="none" xmlns="http://www.w3.org/2000/svg">
         <motion.path
           d="M109.5 106C644.5 106 1081.07 269.487 1060 418C1040 559 728.5 651 557.5 698.5C279.698 775.667 27.539 905.971 42.5001 1041.5C64.9645 1245 1116.5 1420.5 1116.5 1605.5C1116.5 1790.5 815.5 1853 815.5 1853"
           stroke="#333333"
