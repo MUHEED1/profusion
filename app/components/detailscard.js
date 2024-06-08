@@ -2,18 +2,50 @@ import React from "react";
 
 const Detailscard = () => {
   return (
-    <div className="p-[0.7rem] w-[20%] bg-slate-600 rounded-2xl shadow-xl">
-      <div className="w-[full] h-[200px] bg-[white] rounded-xl mb-5"></div>
-      <div className="text-[1rem] flex justify-center rounded-[10px] bg-red-100 p-[0.5rem] text-[grey] w-[20%] ">
+    <div className="p-[0.7rem] w-[25%] bg-[#F9F9F9] rounded-2xl shadow-xl">
+      <div className="w-[full] h-[230px] bg-[#838080] rounded-xl mb-5"></div>
+      <div className="text-[0.85rem] flex justify-center rounded-[999px] font-Matter bg-[#E1E1E1] p-[0.7rem]  w-[20%] ">
         Lable
       </div>
-      <div className=" text-[1.7rem] py-[1rem] "> Heading</div>
+      <div className=" text-[1.3rem] py-[0.5rem] text-[#000000] font-Matter font-semibold ">
+        {" "}
+        Heading
+      </div>
       <div className="text-[grey] text-[1rem] pb-[1.5rem]">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
         dolorum.
       </div>
-      <div className="flex justify-center bg-blue-950 rounded-[10px] p-[1rem] ">
-        Action
+      <div className=" flex justify-between items-center">
+        <div className="text-[#535353] font-Matter text-[0.89rem]">
+          19.5K People Viewed
+        </div>
+        <div className="flex justify-center items-center gap-3 rounded-[999px] bg-[#000000] px-[1.3rem] py-[0.8rem]">
+          <div>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.5799 12C15.5799 13.98 13.9799 15.58 11.9999 15.58C10.0199 15.58 8.41992 13.98 8.41992 12C8.41992 10.02 10.0199 8.41998 11.9999 8.41998C13.9799 8.41998 15.5799 10.02 15.5799 12Z"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12.0001 20.27C15.5301 20.27 18.8201 18.19 21.1101 14.59C22.0101 13.18 22.0101 10.81 21.1101 9.39997C18.8201 5.79997 15.5301 3.71997 12.0001 3.71997C8.47009 3.71997 5.18009 5.79997 2.89009 9.39997C1.99009 10.81 1.99009 13.18 2.89009 14.59C5.18009 18.19 8.47009 20.27 12.0001 20.27Z"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div className="text-[#FFFFFF] text-[1rem]">View</div>
+        </div>
       </div>
     </div>
   );
