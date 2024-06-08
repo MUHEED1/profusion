@@ -4,6 +4,13 @@ import clsx from "clsx";
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 import Detailscard from "./detailscard";
+import Image from "next/image";
+import img1 from "@/public/images/project1.jpg";
+import img2 from "@/public/images/project2.jpg";
+import img3 from "@/public/images/project3.jpg";
+import img4 from "@/public/images/graph.jpg";
+import img5 from "@/public/images/pirchart.jpg";
+import img6 from "@/public/images/hobby.jpg";
 
 const Project = () => {
   const [activeTab, setActiveTab] = useState(1);
@@ -21,11 +28,26 @@ const Project = () => {
           <div className="w-[70%] flex gap-4 ">
             <div className="w-[60%] flex flex-col gap-2">
               <div className="h-[200px]"></div>
-              <div className=" bg-slate-700 h-[300px] rounded-[20px]"></div>
+              <div className="  h-[300px] ">
+                <Image
+                  src={img1}
+                  className="rounded-[30px] object-cover h-[300px] w-[full]"
+                />
+              </div>
             </div>
             <div className="w-[40%]  flex flex-col gap-2">
-              <div className="h-[250px] bg-zinc-600 rounded-[20px]"></div>
-              <div className="h-[250px] bg-zinc-600 rounded-[20px]"></div>
+              <div className="h-[250px]  ">
+                <Image
+                  src={img2}
+                  className="rounded-[20px] object-cover h-[250px]"
+                />
+              </div>
+              <div className="h-[250px]  ">
+                <Image
+                  src={img3}
+                  className="rounded-[20px] object-cover h-[250px]"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -260,10 +282,15 @@ const Project = () => {
             </div>
           </div>
         </div>
-        <div className="py-[2rem] grid grid-cols-3 gap-[1rem]">
-          <Detailscard />
-          <Detailscard />
-          <Detailscard />
+        <div className=" font-Avant fontstyle up font-bold text-[2rem] pt-[3rem] text-[#FFFFFF] ">
+          {" "}
+          Top picks
+        </div>
+        <div className="py-[1rem] grid grid-cols-4 gap-6">
+          <Detailscard src={img5} />
+          <Detailscard src={img4} />
+          <Detailscard src={img6} />
+          <Detailscard src={img6} />
         </div>
       </Padding>
     </div>
