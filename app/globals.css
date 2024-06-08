@@ -2,6 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-overflow-style: none;
+  /* Firefox */
+  scrollbar-width: none;
+}
+/* hidding arrows of input type num */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+/* Webkit (Safari and Chrome) */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+/* Hide scrollbar track and thumb */
+::-webkit-scrollbar {
+  width: 0rem; /* Adjust this value to change the scrollbar width  */
+}
+::-webkit-scrollbar-thumb {
+  background: transparent; /* Make the thumb transparent */
+}
+::-webkit-scrollbar-track {
+  background: transparent; /* Make the track transparent */
+}
+.page-break-inside-avoid {
+  page-break-inside: avoid;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
