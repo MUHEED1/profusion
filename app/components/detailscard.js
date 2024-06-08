@@ -4,7 +4,7 @@ const Detailscard = () => {
   return (
     <div className="p-[0.7rem] w-[25%] bg-[#F9F9F9] rounded-2xl shadow-xl">
       <div className="w-[full] h-[230px] bg-[#838080] rounded-xl mb-5"></div>
-      <div className="text-[0.85rem] flex justify-center rounded-[999px] font-Matter bg-[#E1E1E1] p-[0.7rem]  w-[20%] ">
+      <div className="text-[0.85rem] flex justify-center rounded-[999px] font-Matter bg-[#E1E1E1] p-[0.7rem] text-[#000000]  w-[20%] ">
         Lable
       </div>
       <div className=" text-[1.3rem] py-[0.5rem] text-[#000000] font-Matter font-semibold ">

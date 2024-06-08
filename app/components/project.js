@@ -14,7 +14,7 @@ const Project = () => {
     <div className="pt-[14rem] ">
       <Padding>
         <div className=" flex gap-[2rem] pb-[7rem] ">
-          <div className=" font-Avant text-[2rem]  font-bold w-[26%] leading-[3.3rem] fontstyle">
+          <div className=" font-Avant text-[2rem]  font-bold w-[30%] leading-[3.3rem] fontstyle up">
             Astronomically good projects & inspiration. Only the best of the
             best.
           </div>
@@ -260,7 +260,9 @@ const Project = () => {
             </div>
           </div>
         </div>
-        <div className="py-[2rem]">
+        <div className="py-[2rem] grid grid-cols-3 gap-[1rem]">
+          <Detailscard />
+          <Detailscard />
           <Detailscard />
         </div>
       </Padding>
