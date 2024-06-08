@@ -13,6 +13,7 @@ const Svg = () => {
 
   return (
     <div className='h-[200vh] w-full mx-auto flex justify-center' ref={ref}>
+        <div></div>
       <svg width="1237" height="2098" viewBox="0 0 1237 2098" fill="none" xmlns="http://www.w3.org/2000/svg">
         <motion.path
           d="M109.5 106C644.5 106 1081.07 269.487 1060 418C1040 559 728.5 651 557.5 698.5C279.698 775.667 27.539 905.971 42.5001 1041.5C64.9645 1245 1116.5 1420.5 1116.5 1605.5C1116.5 1790.5 815.5 1853 815.5 1853"
