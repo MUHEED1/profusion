@@ -38,7 +38,7 @@ const Circle = () => {
             <C2 />
           </motion.div>
         </div>
-        {/* <motion.div
+        <motion.div
           className=" flex items-center justify-center absolute"
           style={{ rotate: ro3 }}
         >
@@ -55,7 +55,7 @@ const Circle = () => {
           style={{ rotate: rv2 }}
         >
           <C5 />
-        </motion.div> */}
+        </motion.div>
         {/* <motion.div className=" absolute" style={{ rotate: ro3 }}>
           <C6l />
         </motion.div> */}

@@ -4,8 +4,8 @@ const C1 = () => {
   return (
     <div>
       <svg
-        width="390"
-        height="390"
+        width="550"
+        height="550"
         viewBox="0 0 390 390"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
