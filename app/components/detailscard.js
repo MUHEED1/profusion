@@ -2,8 +2,8 @@ import React from "react";
 
 const Detailscard = () => {
   return (
-    <div className="p-[0.5rem] w-[20%] bg-slate-600 rounded-xl shadow-xl">
-      <div className="w-[full] h-[200px] bg-[white] mb-5"></div>
+    <div className="p-[0.7rem] w-[20%] bg-slate-600 rounded-2xl shadow-xl">
+      <div className="w-[full] h-[200px] bg-[white] rounded-xl mb-5"></div>
       <div className="text-[1rem] flex justify-center rounded-[10px] bg-red-100 p-[0.5rem] text-[grey] w-[20%] ">
         Lable
       </div>
