@@ -1,5 +1,7 @@
 import "./globals.css";
-
+import "../public/fonts/Avant/stylesheet.css";
+// import "../public/fonts/polysans/stylesheet.css";
+import "../public/fonts/matter/stylesheet.css";
 import { NextUIProvider } from "@nextui-org/react";
 
 export const metadata = {
@@ -10,9 +12,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+        <body>
       <NextUIProvider>
-        <body>{children}</body>
+          {children}
       </NextUIProvider>
+          </body>
     </html>
   );
 }
