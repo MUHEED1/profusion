@@ -30,7 +30,7 @@ const Hero = () => {
 <Padding className={"absolute z-40 top-[20rem]"}>
 
 <div className=' space-y-3'>
-      <div className=' font-Avant font-semibold max-w-[30rem] leading-[3rem] text-[2.5rem]'>Discover and Explore the world of tech</div>
+      <div className=' font-Avant fontstyle font-semibold max-w-[30rem] leading-[3rem] text-[2.5rem]'>Discover and Explore the world of tech</div>
       <div className='px-5 rounded-full py-2 bg-black text-white w-max  font-Matter'>Explore</div>
 </div>
 <div className=' pt-[50rem] space-y-3'>

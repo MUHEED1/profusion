@@ -61,3 +61,18 @@ body {
     text-wrap: balance;
   }
 }
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+.fontstyle {
+  /* font-feature-settings: 'ss01' on, 'ss04' on, 'ss03' on; */
+  font-feature-settings: "salt" on;
+}
+.up {
+  text-transform: uppercase;
+}
+.loader {
+  animation: rotation 1.5s linear infinite;
+}
