@@ -26,7 +26,7 @@ const Rotating = () => {
           style={{ top: t }}
         >
           {/* ${ scrollY>9500 && scrollY < 12500 ? " sticky ":" relative"} */}
-          <div ref={maf} className=" overflow-hidden xl:pb-[20rem] pt-[10rem]">
+          <div ref={maf} className=" overflow-hidden  pt-[10rem]">
             <motion.div
               className=" flex  w-full   h-[110vh]  relative z-[1000]"
               style={{ translateX: pd }}

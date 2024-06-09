@@ -25,8 +25,8 @@ const Okay = () => {
     y.set(mouseY);
   }, [mouseX, mouseY, x, y]);
 
-  const translateX = useTransform(x, [0, window.innerWidth], [-15, 15]);
-  const translateY = useTransform(y, [0, window.innerHeight], [-15, 15]);
+  const translateX = useTransform(x, [0, window.innerWidth], [-35, 35]);
+  const translateY = useTransform(y, [0, window.innerHeight], [-35, 35]);
 
   return (
     <motion.div className='h-screen w-screen'
@@ -65,7 +65,8 @@ const Okay = () => {
           transformStyle: 'preserve-3d',
         }}
       >
-        <Image height={170} width={170} src="/images/p1.jpg" alt="Image description" />
+               <video autoPlay loop playsInline muted height={200} width={200} src="/images/vd6.mp4" alt="Image description" />
+
       </motion.div>
        <motion.div
         style={{
@@ -93,7 +94,7 @@ const Okay = () => {
           transformStyle: 'preserve-3d',
         }}
       >
-        <video autoPlay loop playsInline muted height={200} width={200} src="/images/vd1.mp4" alt="Image description" />
+        <video autoPlay loop playsInline muted height={200} width={200} src="/images/vd4.mp4" alt="Image description" />
       </motion.div>
        <motion.div
         style={{
@@ -107,7 +108,7 @@ const Okay = () => {
           transformStyle: 'preserve-3d',
         }}
       >
-        <video autoPlay loop playsInline muted height={200} width={200} src="/images/vd3.mp4" alt="Image description" />
+        <video autoPlay loop playsInline muted height={200} width={200} src="/images/vd5.mp4" alt="Image description" />
       </motion.div>
        <motion.div
         style={{

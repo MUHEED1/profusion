@@ -18,11 +18,11 @@ const Circle = () => {
     };
   }, [scrollYProgress]);
 
-  const r1 = useTransform(scrollYProgress, [0.1, 0.45], ["-280deg", "0deg"]);
-  const r2 = useTransform(scrollYProgress, [0.1, 0.45], ["150deg", "0deg"]);
-  const r3 = useTransform(scrollYProgress, [0.1, 0.45], ["-200deg", "0deg"]);
-  const r4 = useTransform(scrollYProgress, [0.1, 0.45], ["340deg", "0deg"]);
-  const r5 = useTransform(scrollYProgress, [0.1, 0.45], ["-340deg", "0deg"]);
+  const r1 = useTransform(scrollYProgress, [0, 0.33], ["280deg", "0deg"]);
+  const r2 = useTransform(scrollYProgress, [0, 0.33], ["150deg", "0deg"]);
+  const r3 = useTransform(scrollYProgress, [0, 0.33], ["-200deg", "0deg"]);
+  const r4 = useTransform(scrollYProgress, [0, 0.33], ["340deg", "0deg"]);
+  const r5 = useTransform(scrollYProgress, [0, 0.33], ["-340deg", "0deg"]);
 
 
   return (
