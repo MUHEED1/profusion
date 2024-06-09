@@ -32,7 +32,7 @@ const Project = () => {
     setActiveTab(tabNumber);
   };
   return (
-    <div className="pt-[14rem] bg-[white] ">
+    <div className="pt-[14rem] bg-[white] pb-40 rounded-b-[45px] border-b border-[#e4e4e4] ">
       <Padding>
         <div className=" flex gap-[2rem] pb-[7rem] ">
           <div className=" font-Avant text-[2rem]  font-bold w-[30%] leading-[3.3rem] fontstyle up text-[#000000]">
@@ -89,125 +89,119 @@ const Project = () => {
                 <div>All</div>
               </div>
             </div> */}
-<Link href={"/projectdetails"}>
-
-            <div
-              className={clsx(
-                " px-8 py-[0.5rem]   cursor-pointer  relative z-40 rounded-full font-manrope font-semibold  transition-all text-[1rem] md:text-[1.1rem] duration-1000",
-                activeTab == 2 ? "text-[#FFFFFF]" : "text-[#252525]"
-              )}
-              onClick={() => changeTab(2)}
+            <Link href={"/projectdetails"}>
+              <div
+                className={clsx(
+                  " px-8 py-[0.5rem]   cursor-pointer  relative z-40 rounded-full font-manrope font-semibold  transition-all text-[1rem] md:text-[1.1rem] duration-1000",
+                  activeTab == 2 ? "text-[#FFFFFF]" : "text-[#252525]"
+                )}
+                onClick={() => changeTab(2)}
               >
-              {activeTab == 2 && (
-                <motion.span
-                layoutId="tabs"
-                className={`  border border-[#f0f0f0] px-8 py-[0.5rem] absolute top-0 rounded-full left-0 w-full h-full -z-10 text-white bg-[#2E303A]      `}
-                />
-              )}
-              <div className=" flex gap-1 items-center">
-                <div className="  ">Python</div>
+                {activeTab == 2 && (
+                  <motion.span
+                    layoutId="tabs"
+                    className={`  border border-[#f0f0f0] px-8 py-[0.5rem] absolute top-0 rounded-full left-0 w-full h-full -z-10 text-white bg-[#2E303A]      `}
+                  />
+                )}
+                <div className=" flex gap-1 items-center">
+                  <div className="  ">Python</div>
+                </div>
               </div>
-            </div>
-              </Link>
-<Link href={"/cdetails"}>
-
-            <div
-              className={clsx(
-                " px-8 py-[0.5rem]   cursor-pointer  relative z-40 rounded-full font-manrope font-semibold  transition-all text-[1rem] md:text-[1.1rem] duration-1000",
-                activeTab == 3 ? "text-[#FFFFFF]" : "text-[#252525]"
-              )}
-              onClick={() => changeTab(3)}
-            >
-              {activeTab == 3 && (
-                <motion.span
-                  layoutId="tabs"
-                  className={`  border border-[#f0f0f0] px-8 py-[0.5rem] absolute top-0 rounded-full left-0 w-full h-full -z-10 text-white bg-[#2E303A]      `}
-                />
-              )}
-              <div className=" flex gap-1 items-center">
-                <div className="  ">C++</div>
-              </div>
-            </div>
             </Link>
-<Link href={"/javadetails"}>
-
-            <div
-              className={clsx(
-                " px-8 py-[0.5rem]   cursor-pointer  relative z-40 rounded-full font-manrope font-semibold  transition-all text-[1rem] md:text-[1.1rem] duration-1000",
-                activeTab == 4 ? "text-[#FFFFFF]" : "text-[#252525]"
-              )}
-              onClick={() => changeTab(4)}
-            >
-              {activeTab == 4 && (
-                <motion.span
-                  layoutId="tabs"
-                  className={`  border border-[#f0f0f0] px-8 py-[0.5rem] absolute top-0 rounded-full left-0 w-full h-full -z-10 text-white bg-[#2E303A]      `}
-                />
-              )}
-              <div className=" flex gap-1 items-center">
-                <div className="  ">Java</div>
+            <Link href={"/cdetails"}>
+              <div
+                className={clsx(
+                  " px-8 py-[0.5rem]   cursor-pointer  relative z-40 rounded-full font-manrope font-semibold  transition-all text-[1rem] md:text-[1.1rem] duration-1000",
+                  activeTab == 3 ? "text-[#FFFFFF]" : "text-[#252525]"
+                )}
+                onClick={() => changeTab(3)}
+              >
+                {activeTab == 3 && (
+                  <motion.span
+                    layoutId="tabs"
+                    className={`  border border-[#f0f0f0] px-8 py-[0.5rem] absolute top-0 rounded-full left-0 w-full h-full -z-10 text-white bg-[#2E303A]      `}
+                  />
+                )}
+                <div className=" flex gap-1 items-center">
+                  <div className="  ">C++</div>
+                </div>
               </div>
-            </div>
             </Link>
-<Link href={"/projectdetails"}>
-            
-            <div
-              className={clsx(
-                " px-8 py-[0.5rem]   cursor-pointer  relative z-40 rounded-full font-manrope font-semibold  transition-all text-[1rem] md:text-[1.1rem] duration-1000",
-                activeTab == 5 ? "text-[#FFFFFF]" : "text-[#252525]"
-              )}
-              onClick={() => changeTab(5)}
-            >
-              {activeTab == 5 && (
-                <motion.span
-                  layoutId="tabs"
-                  className={`  border border-[#f0f0f0] px-8 py-[0.5rem] absolute top-0 rounded-full left-0 w-full h-full -z-10 text-white bg-[#2E303A]      `}
-                />
-              )}
-              <div className=" flex gap-1 items-center">
-                <div className="  ">GO</div>
+            <Link href={"/javadetails"}>
+              <div
+                className={clsx(
+                  " px-8 py-[0.5rem]   cursor-pointer  relative z-40 rounded-full font-manrope font-semibold  transition-all text-[1rem] md:text-[1.1rem] duration-1000",
+                  activeTab == 4 ? "text-[#FFFFFF]" : "text-[#252525]"
+                )}
+                onClick={() => changeTab(4)}
+              >
+                {activeTab == 4 && (
+                  <motion.span
+                    layoutId="tabs"
+                    className={`  border border-[#f0f0f0] px-8 py-[0.5rem] absolute top-0 rounded-full left-0 w-full h-full -z-10 text-white bg-[#2E303A]      `}
+                  />
+                )}
+                <div className=" flex gap-1 items-center">
+                  <div className="  ">Java</div>
+                </div>
               </div>
-            </div>
             </Link>
-<Link href={"/projectdetails"}>
-
-            <div
-              className={clsx(
-                " px-8 py-[0.5rem]   cursor-pointer  relative z-40 rounded-full font-manrope font-semibold  transition-all text-[1rem] md:text-[1.1rem] duration-1000",
-                activeTab == 6 ? "text-[#FFFFFF]" : "text-[#252525]"
-              )}
-              onClick={() => changeTab(6)}
-            >
-              {activeTab == 6 && (
-                <motion.span
-                  layoutId="tabs"
-                  className={`  border border-[#f0f0f0] px-8 py-[0.5rem] absolute top-0 rounded-full left-0 w-full h-full -z-10 text-white bg-[#2E303A]      `}
-                />
-              )}
-              <div className=" flex gap-1 items-center">
-                <div className="  ">Ruby</div>
+            <Link href={"/projectdetails"}>
+              <div
+                className={clsx(
+                  " px-8 py-[0.5rem]   cursor-pointer  relative z-40 rounded-full font-manrope font-semibold  transition-all text-[1rem] md:text-[1.1rem] duration-1000",
+                  activeTab == 5 ? "text-[#FFFFFF]" : "text-[#252525]"
+                )}
+                onClick={() => changeTab(5)}
+              >
+                {activeTab == 5 && (
+                  <motion.span
+                    layoutId="tabs"
+                    className={`  border border-[#f0f0f0] px-8 py-[0.5rem] absolute top-0 rounded-full left-0 w-full h-full -z-10 text-white bg-[#2E303A]      `}
+                  />
+                )}
+                <div className=" flex gap-1 items-center">
+                  <div className="  ">GO</div>
+                </div>
               </div>
-            </div>
             </Link>
-<Link href={"/projectdetails"}>
-
-            <div
-              className={clsx(
-                " px-8 py-[0.5rem]   cursor-pointer  relative z-40 rounded-full font-manrope font-semibold  transition-all text-[1rem] md:text-[1.1rem] duration-1000",
-                activeTab == 7 ? "text-[#FFFFFF]" : "text-[#252525]"
-              )}
-              onClick={() => changeTab(7)}
-            >
-              {activeTab == 7 && (
-                <motion.span
-                  layoutId="tabs"
-                  className={`  border border-[#f0f0f0] px-8 py-[0.5rem] absolute top-0 rounded-full left-0 w-full h-full -z-10 text-white bg-[#2E303A]      `}
-                />
-              )}
-              <div className=" flex gap-1 items-center">
-                <div className="  ">C#</div>
+            <Link href={"/projectdetails"}>
+              <div
+                className={clsx(
+                  " px-8 py-[0.5rem]   cursor-pointer  relative z-40 rounded-full font-manrope font-semibold  transition-all text-[1rem] md:text-[1.1rem] duration-1000",
+                  activeTab == 6 ? "text-[#FFFFFF]" : "text-[#252525]"
+                )}
+                onClick={() => changeTab(6)}
+              >
+                {activeTab == 6 && (
+                  <motion.span
+                    layoutId="tabs"
+                    className={`  border border-[#f0f0f0] px-8 py-[0.5rem] absolute top-0 rounded-full left-0 w-full h-full -z-10 text-white bg-[#2E303A]      `}
+                  />
+                )}
+                <div className=" flex gap-1 items-center">
+                  <div className="  ">Ruby</div>
+                </div>
               </div>
-            </div>
+            </Link>
+            <Link href={"/projectdetails"}>
+              <div
+                className={clsx(
+                  " px-8 py-[0.5rem]   cursor-pointer  relative z-40 rounded-full font-manrope font-semibold  transition-all text-[1rem] md:text-[1.1rem] duration-1000",
+                  activeTab == 7 ? "text-[#FFFFFF]" : "text-[#252525]"
+                )}
+                onClick={() => changeTab(7)}
+              >
+                {activeTab == 7 && (
+                  <motion.span
+                    layoutId="tabs"
+                    className={`  border border-[#f0f0f0] px-8 py-[0.5rem] absolute top-0 rounded-full left-0 w-full h-full -z-10 text-white bg-[#2E303A]      `}
+                  />
+                )}
+                <div className=" flex gap-1 items-center">
+                  <div className="  ">C#</div>
+                </div>
+              </div>
             </Link>
             <div
               className={clsx(

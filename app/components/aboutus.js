@@ -8,7 +8,7 @@ import src2 from "@/public/images/muzammil.png";
 
 const Aboutus = () => {
   return (
-    <div className="pt-[14rem] bg-[white]">
+    <div className="pt-[14rem] bg-[white] pb-40 rounded-b-[45px] border-b border-[#e4e4e4]">
       <Padding>
         <div className=" flex justify-between pb-[2rem]">
           <div className="text-[2.2rem] font-Avant fontstyle font-bold pt-[1.5rem] text-[#000000] w-[45%]">

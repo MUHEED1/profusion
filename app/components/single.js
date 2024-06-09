@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import src from "@/public/images/da1.jpg";
-import { useSearchParams } from"next/navigation";
+import { useSearchParams } from "next/navigation";
 import { fetchcasestudiesbyslug } from "../api/fetchblogsbyslug";
 import Padding from "./padding";
 import Contenth1 from "./contenth1";
@@ -11,12 +11,11 @@ import Contenth3 from "./contenth3";
 import Contentdualimage from "./contentdualimage";
 import Contentimage from "./contentimage";
 
-
 const Title = () => {
   const searchParams = useSearchParams();
   const slug = searchParams.get("slug");
   const [blogData, setBlogData] = useState();
-  
+
   const [thumnailurl, setthumbnailurl] = useState();
   const [author, setauthor] = useState();
   const [category, setcategory] = useState();
@@ -27,17 +26,15 @@ const Title = () => {
     const fetchData = async () => {
       try {
         const response = await fetchcasestudiesbyslug(slug);
-       console.log(response);
-          setBlogData(response.data[0].attributes);
-    
+        console.log(response);
+        setBlogData(response.data[0].attributes);
+
         setthumbnailurl(
           response.data[0].attributes.thumbnail.data.attributes.url
         );
 
         setauthor(response.data[0].attributes.services);
-        setcategory(
-          response.data[0].attributes.category
-        );
+        setcategory(response.data[0].attributes.category);
         setloading(false);
         console.log(response, "futuree");
       } catch (error) {
@@ -48,20 +45,18 @@ const Title = () => {
     fetchData();
   }, [slug]);
 
-  if(loading)
-    {
-        return(
-            <div className=' h-screen w-full bg-[#000000] flex items-center justify-center' >
-        <div className=' flex h-[7px] w-[400px] border-[1px] border-[grey] bg-[#000000] rounded-[10px] overflow-hidden relative shadow-lg ' >
-            <div className=' flex h-full w-[208px] loading rounded-[10px]  ' >
-            </div>
+  if (loading) {
+    return (
+      <div className=" h-screen w-full bg-[#000000] flex items-center justify-center">
+        <div className=" flex h-[7px] w-[400px] border-[1px] border-[grey] bg-[#000000] rounded-[10px] overflow-hidden relative shadow-lg ">
+          <div className=" flex h-full w-[208px] loading rounded-[10px]  "></div>
         </div>
-    </div>
-        )
-    }
+      </div>
+    );
+  }
 
   return (
-    <div className=" pt-[10rem] py-20 ">
+    <div className=" pt-[10rem] py-20  rounded-b-[45px] border-b border-[#e4e4e4] ">
       <Padding
         className={
           " font-Matter text-white font-medium text-[0.85rem] flex flex-col "
@@ -94,16 +89,11 @@ const Title = () => {
             height={1000}
           />
         </div>
-       
-        <Contenth1 content={blogData?.content1}>
-        </Contenth1>
-       
-        <Contenth2 content={blogData?.content1}>
-        </Contenth2>
-        <Contenth3 content={blogData?.content1}>
-        </Contenth3>
-    
-        
+
+        <Contenth1 content={blogData?.content1}></Contenth1>
+
+        <Contenth2 content={blogData?.content1}></Contenth2>
+        <Contenth3 content={blogData?.content1}></Contenth3>
       </Padding>
     </div>
   );

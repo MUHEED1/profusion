@@ -12,7 +12,7 @@ import Youtube from "../components/youtube";
 
 const Page = () => {
     return (
-        <div className="z-10 relative bg-[#101010]">
+        <div className="z-10 relative bg-[#101010] pb-40 rounded-b-[45px] border-b border-[#e4e4e4]">
 
             <Task />
             <Resources />
