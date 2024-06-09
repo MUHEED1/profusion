@@ -7,6 +7,7 @@ import Resources from '../components/resources'
 import { Code } from '@nextui-org/react'
 import Code1 from '../components/code'
 import Accordionn from '../components/accordionn'
+import Youtube from '../components/youtube'
 
 const Page = () => {
     return (
@@ -15,6 +16,7 @@ const Page = () => {
             <Resources />
             <Code1 />
             <Accordionn/>
+            <Youtube/>
         </div>
     )
 }

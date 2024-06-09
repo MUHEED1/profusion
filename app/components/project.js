@@ -305,7 +305,7 @@ const Project = () => {
             lable={"Python"}
             Heading={"Learning"}
             content={
-              "This project involves building a model to classify images into various categories using deep learning techniques. The model is trained on a dataset of labeled images and achieves high accuracy in prediction."
+              "This project involves building a model to classify images into various categories using deep learning techniques."
             }
           />
           <Detailscard
@@ -313,7 +313,7 @@ const Project = () => {
             lable={"Java"}
             Heading={"Deep learning"}
             content={
-              "This project involves building a model to classify images into various categories using deep learning techniques. The model is trained on a dataset of labeled images and achieves high accuracy in prediction."
+              "This project involves building a model to classify images into various categories using deep learning techniques."
             }
           />
           <Detailscard
@@ -445,7 +445,7 @@ const Project = () => {
           </div>
         </div>
       </Padding>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

@@ -5,6 +5,7 @@ import "../public/fonts/matter/stylesheet.css";
 import { NextUIProvider } from "@nextui-org/react";
 import Navbar from "./components/navbar";
 import Lenis1 from "./components/lenis";
+import Footer from "./components/footer";
 
 export const metadata = {
   title: "Create Next App",
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
 <Lenis1>
           {children}
 </Lenis1>
+<Footer/>
         </NextUIProvider>
       </body>
     </html>

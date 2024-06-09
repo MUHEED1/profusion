@@ -3,7 +3,7 @@ import Padding from "./padding";
 
 const Footer = () => {
   return (
-    <div className="pt-[5rem]">
+    <div className="pt-[5rem] bg-white">
       <Padding>
         <div className="flex justify-center  ">
           <svg
