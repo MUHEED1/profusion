@@ -23,6 +23,7 @@ import img15 from "@/public/images/ad1.jpg";
 import img16 from "@/public/images/ad2.jpg";
 import img17 from "@/public/images/ad3.jpg";
 import img18 from "@/public/images/ad4.jpg";
+import Footer from "./footer";
 
 const Project = () => {
   const [activeTab, setActiveTab] = useState(1);
@@ -332,8 +333,8 @@ const Project = () => {
             }
           />
         </div>
-        <div className="font-Avant fontstyle up font-bold text-[2rem] pt-[3rem] text-[#000000]">
-          <div>AIML</div>
+        <div className="  text-[2rem] pt-[3rem] text-[#000000]">
+          <div className="font-Avant fontstyle up font-bold">AIML</div>
           <div className="py-[1rem] grid grid-cols-4 gap-6">
             <Detailscard
               src={img7}
@@ -444,6 +445,7 @@ const Project = () => {
           </div>
         </div>
       </Padding>
+      <Footer />
     </div>
   );
 };
