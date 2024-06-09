@@ -36,7 +36,9 @@ const Navbar = () => {
         </div>
       </motion.div>
       <div className="rounded-full bg-[#602cc1aa]  px-[3rem] py-[1rem]   font-Avant font-semibold fontstyle flex justify-center  items-center  ">
+        <Link href={"/chat"}>
         <div className=""> Ask</div>
+        </Link>
       </div>
     </div>
   );

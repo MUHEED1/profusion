@@ -8,11 +8,11 @@ import Svg from '@/public/icons/svg';
 import Image from 'next/image';
 
 const Hero = () => {
-  const { scrollYProgress } = useScroll();
-  const maf=useRef()
+    const maf=useRef()
+  const { scrollYProgress } = useScroll({target:maf});
 
   // Define animations for scaling and opacity
-  const scale = useTransform(scrollYProgress, [0, 1], [0.2, 1.8]);
+  const scale = useTransform(scrollYProgress, [0, 1], [0.8, 1.8]);
   const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
 
   return (
@@ -24,7 +24,7 @@ const Hero = () => {
         loop
         src='/images/video.mp4'
         style={{ scale, opacity }}
-        className='sticky  top-10 rounded-t-[3rem]'
+        className='sticky  top-10 rounded-[3rem]'
     />
       {/* <ScrollyVideo src="/images/video.mp4" /> */}
     {/* <div className='absolute w-screen h-full left-0 top-0 bg-[#0000003a]'></div> */}
@@ -32,7 +32,7 @@ const Hero = () => {
 
 <Padding className={"absolute z-40 top-[20rem]"}>
 
-<div className=' space-y-3'>
+<div className=' pt-[60rem] space-y-3'>
       <div className=' font-Avant fontstyle font-semibold max-w-[30rem] leading-[3rem] text-[2.5rem]'>Discover and Explore the world of tech</div>
       <div className='px-5 rounded-full py-2 bg-black text-white w-max  font-Matter'>Explore</div>
 </div>

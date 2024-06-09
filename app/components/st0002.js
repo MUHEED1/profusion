@@ -1,101 +1,635 @@
 "use client";
+
 import Image from "next/image";
-import React from "react";
-import pic from "@/public/images/circle/pic.jpg";
-import pic2 from "@/public/images/pic2.jpg";
-import { useScroll, useTransform, motion } from "framer-motion";
+import React, { useEffect, useState } from "react";
+import pic from "@/public/images/circle/pic.jpg"
+import pic2 from "@/public/images/pic2.jpg"
+import Marqueee from "./marquee";
 
 const St0002 = () => {
-  const { scrollYProgress } = useScroll();
+  const [pas, setPas] = useState(false);
+  const [pas2, setPas2] = useState(false);
+  const [pas3, setPas3] = useState(false);
+  const [pas4, setPas4] = useState(false);
+  const [pas5, setPas5] = useState(false);
+  const [pas6, setPas6] = useState(false);
 
-  // Define the points at which different parts of the text should change color
-  const textColor = useTransform(scrollYProgress, [0, 0.3, 0.5, 0.7, 1], [
-    "#000000", // Initial state
-    "#000000", // First change
-    "#000000", // Second change
-    "#000000", // Third change
-    "#000000", // Final state
-  ]);
+  const [pas1, setPas1] = useState(false);
+  const [pas12, setPas12] = useState(false);
+  const [pas13, setPas13] = useState(false);
+  const [pas14, setPas14] = useState(false);
+  const [pas15, setPas15] = useState(false);
+  const [pas21, setPas21] = useState(false);
 
-  // Opacity transitions for images
-  const imageOpacity = useTransform(scrollYProgress, [0, 0.4], [0, 1]);
+  const [scrollY, setScrollY] = useState(0);
+  const [isMobile, setIsMobile] = useState(0);
+  const [isTab, setIsTab] = useState(0);
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (scrollY > 700) {
+      setPas(true);
+    }
+    if (scrollY > 730) {
+      setPas2(true);
+    }
+    if (scrollY > 220) {
+      setPas3(true);
+    }
+    if (scrollY > 330) {
+      setPas4(true);
+    }
+    if (scrollY > 400) {
+      setPas5(true);
+    }
+    if (scrollY > 300) {
+      setPas(true);
+    }
+  }, [scrollY]);
 
   return (
     <div className="bg-white">
-      <div className="px-6 xl:px-16 bg-white py-40 flex gap-10">
-        <motion.div
-          className="w-full h-full object-cover"
-          style={{ opacity: imageOpacity }}
+      <div className="px-6 xl:px-16 bg-white py-40 flex gap-10 ">
+        {/* <div
+        className={`${scrollY > 300 ? "md:text-black" : "md:text-[#B8BEBE]"}`}
+      >
+        DiscoverTech{" "}
+      </div>
+      <div
+        className={`${scrollY > 300 ? "md:text-black" : "md:text-[#B8BEBE]"}`}
+      >
+        {" "}
+        is{" "}
+      </div>{" "}
+      <div
+        className={`${scrollY > 300 ? "md:text-black" : "md:text-[#B8BEBE]"}`}
+      >
+        {" "}
+        your{" "}
+      </div>{" "}
+      <div
+        className={`${scrollY > 300 ? "md:text-black" : "md:text-[#B8BEBE]"}`}
+      >
+        {" "}
+        compass
+      </div>
+      <div className="flex">
+        <div
+          className={`${scrollY > 300 ? "md:text-black" : "md:text-[#B8BEBE]"}`}
         >
-          <Image className=" h-full" width={700} height={500} src={pic} alt="" />
-        </motion.div>
-        <div className="hidden lg:block text-[1rem] py-20 xl:hidden  xl:text-3xl">
-          <motion.div style={{ color: textColor }}>
-            <div>We curate an array of</div>
-            <div className="flex">
-              <div className="mx-2 rotate-[6deg] rounded-full px-5">insightful</div>
-              <div>resources, guiding you towards</div>
-            </div>
-            <div>innovative projects and cutting-edge technologies.</div>
-          </motion.div>
+          through{" "}
         </div>
-        {/* //small bg */}
-        <div className="hidden py-0 xl:flex xl:text-[3rem] xl:leading-[4rem]">
-          <div className="flex flex-wrap gap-x-2 items-center sp">
-            <motion.div style={{ color: textColor }}>We</motion.div>
-            <motion.div style={{ color: textColor }}> curate</motion.div>
-            <motion.div style={{ color: textColor }}> an</motion.div>
-            <motion.div style={{ color: textColor }}> array</motion.div>
-            <motion.div style={{ color: textColor }}> of</motion.div>
-            <motion.div style={{ color: textColor }}> insightful</motion.div>
-            <motion.div style={{ color: textColor }}> resources,</motion.div>
-            <motion.div style={{ color: textColor }}> guiding</motion.div>
-            <motion.div style={{ color: textColor }}> you</motion.div>
-            <motion.div style={{ color: textColor }}> towards</motion.div>
-            <motion.div style={{ color: textColor }}> innovative</motion.div>
-            <motion.div style={{ color: textColor }}> projects</motion.div>
-            <motion.div style={{ color: textColor }}> and</motion.div>
-            <motion.div style={{ color: textColor }}> cutting-edge</motion.div>
-            <motion.div style={{ color: textColor }}> technologies.</motion.div>
+        <div
+          className={`${scrollY > 300 ? "md:text-black" : "md:text-[#B8BEBE]"}`}
+        >
+          the{" "}
+        </div>
+        <div>
+          <div
+            className={` ${
+              scrollY > 300 ? "md:text-black" : "md:text-[#B8BEBE]"
+            }`}
+          >
+            We{" "}
+          </div>
+          <div
+            className={` ${
+              scrollY > 300 ? "md:text-black" : "md:text-[#B8BEBE]"
+            }`}
+          >
+            {" "}
+            believe{" "}
+          </div>
+          <div
+            className={` ${
+              scrollY > 300 ? "md:text-black" : "md:text-[#B8BEBE]"
+            }`}
+          >
+            {" "}
+            in{" "}
+          </div>{" "}
+          <div
+            className={` ${
+              scrollY > 300 ? "md:text-black" : "md:text-[#B8BEBE]"
+            }`}
+          >
+            {" "}
+            the{" "}
+          </div>{" "}
+          <div
+            className={` ${
+              scrollY > 300 ? "md:text-black" : "md:text-[#B8BEBE]"
+            }`}
+          >
+            {" "}
+            power{" "}
+          </div>{" "}
+          <div
+            className={` ${
+              scrollY > 300 ? "md:text-black" : "md:text-[#B8BEBE]"
+            }`}
+          >
+            {" "}
+            of{" "}
+          </div>
+          <div className="flex">
+            <div
+              className={`${
+                scrollY > 300 ? "md:text-black" : "md:text-[#B8BEBE]"
+              }`}
+            >
+              ever-evolving {" "}
+            </div>
+            <div
+              className={`${
+                scrollY > 300 ? "md:text-black" : "md:text-[#B8BEBE]"
+              }`}
+            >
+              landscape {" "}
+            </div>{" "}
+            <div
+              className={`${
+                scrollY > 300 ? "md:text-black" : "md:text-[#B8BEBE]"
+              }`}
+            >
+            of{" "}
+            </div>
+            <div>
+              <img
+                className={`hidden ml-1 xl:mt-3 lg:block w-[ck duration-500]" : " text-[#B8BEBE]"} ${
+                  scrollY > 300 ? "md:text-black" : "md:text-[#B8BEBE]"
+                }`}
+              />{" "}
+              quality, direct{" "}
+            </div>
+            <div>
+              <img
+                className={`hidden ml-1 xl:mt-3 lg:block w-[90px] h-[90px]`}
+                src="/images/logo.png"
+                alt=""
+              />{" "}
+            </div>
+            <div
+              className={`${
+                scrollY > 730 || pas2
+                  ? "text-black duration-500"
+                  : " text-[#B8BEBE]"
+              } ${scrollY > 340 ? "md:text-black" : "md:text-[#B8BEBE]"}`}
+            >
+              {" "}
+              projects and{" "}
+            </div>
+          </div>
+          <div
+            className={`${
+              scrollY > 730 || pas2
+                ? "text-black duration-500"
+                : " text-[#B8BEBE]"
+            } ${scrollY > 340 ? "md:text-black" : "md:text-[#B8BEBE]"}`}
+          >
+            technologies.
+          </div>
+        </div>
+      </div> */}
+        {/* //lg */}
+        <div className="w-full h-full object-cover"><Image className=" h-full" width={700} height={500} src={pic} alt="" /></div>
+        <div className="hidden lg:block text-[1rem] py-20 xl:hidden  xl:text-3xl">
+
+          <div>
+            <div
+              className={` ${scrollY > 2640 ? "md:text-black" : "md:text-[#B8BEBE]"
+                }`}
+            >
+              We curate an array of
+            </div>
+            <div className="flex">
+              <div
+                className={` mx-2 ${scrollY > 2700
+                  ? " rotate-[6deg] rounded-full px-5 md:text-black"
+                  : "md:text-[#B8BEBE]"
+                  } `}
+              >
+                insightful{" "}
+              </div>
+              <div
+                className={` ${scrollY > 2700 ? "md:text-black" : "md:text-[#B8BEBE]"
+                  }`}
+              >
+                {" "}
+                resources, guiding you towards
+              </div>
+            </div>
+            <div
+              className={` ${scrollY > 2700 ? "md:text-black" : "md:text-[#B8BEBE]"
+                }`}
+            >
+              innovative projects and cutting-edge technologies.
+            </div>
+          </div>
+        </div>
+        
+        {/* //small   bg */}
+        <div className="hidden  py-0 xl:flex  xl:text-[3rem]  xl:leading-[4rem]">
+          <div className=" flex flex-wrap gap-x-2 items-center sp ">
+            <div
+              className={`${scrollY > 2340 ? "md:text-black" : "md:text-[#B8BEBE]"
+                } `}
+            >
+              We{" "}
+            </div>
+            <div
+              className={`${scrollY > 2340 ? "md:text-black" : "md:text-[#B8BEBE]"
+                } `}
+            >
+              {" "}curate{" "}
+            </div>
+            <div
+              className={`${scrollY > 2340 ? "md:text-black" : "md:text-[#B8BEBE]"
+                } `}
+            >
+              {" "}an{" "}
+            </div>
+
+            <div
+              className={`${scrollY > 3330 || pas4
+                ? " duration-500 text-black"
+                : " text-[#B8BEBE]"
+                }`}
+            >
+              {" "}
+              array{" "}
+            </div>
+            <div
+              className={`${scrollY > 3330 || pas4
+                ? " duration-500 text-black"
+                : " text-[#B8BEBE]"
+                }`}
+            >
+              {" "}
+              of{" "}
+            </div>
+            <div
+              className={`       ${scrollY > 3330 || pas4
+                ? " rounded-full  duration-500   text-black"
+                : " text-[#B8BEBE]"
+                }`}
+            >
+              {" "}
+              insightful{" "}
+            </div>
+            <div
+              className={`${scrollY > 3330 || pas4
+                ? " duration-500 text-black"
+                : " text-[#B8BEBE]"
+                }`}
+            >
+              {" "}
+              resources,{" "}
+            </div>
+            <div
+              className={`${scrollY > 3330 || pas4
+                ? " duration-500 text-black"
+                : " text-[#B8BEBE]"
+                }`}
+            >
+              {" "}
+              guiding{" "}
+            </div>
+            <div
+              className={`${scrollY > 3330 || pas4
+                ? " duration-500 text-black"
+                : " text-[#B8BEBE]"
+                }`}
+            >
+              {" "}
+              you{" "}
+            </div>
+            <div
+              className={`${scrollY > 3330 || pas4
+                ? " duration-500 text-black"
+                : " text-[#B8BEBE]"
+                }`}
+            >
+              {" "}
+              towards{" "}
+            </div>
+
+            <div
+              className={`${scrollY > 3400 || pas5
+                ? " duration-500 text-black"
+                : " text-[#B8BEBE]"
+                }`}
+            >
+              {" "}
+              innovative
+            </div>
+            <div
+              className={`${scrollY > 3400 || pas5
+                ? " duration-500 text-black"
+                : " text-[#B8BEBE]"
+                }`}
+            >
+              {" "}
+              projects
+            </div>{" "}
+            <div
+              className={`${scrollY > 3400 || pas5
+                ? " duration-500 text-black"
+                : " text-[#B8BEBE]"
+                }`}
+            >
+              {" "}
+              and
+            </div>{" "}
+            <div
+              className={`${scrollY > 3400 || pas5
+                ? " duration-500 text-black"
+                : " text-[#B8BEBE]"
+                }`}
+            >
+              {" "}
+              cutting-edge
+            </div>{" "}
+            <div
+              className={`${scrollY > 3400 || pas5
+                ? " duration-500 text-black"
+                : " text-[#B8BEBE]"
+                }`}
+            >
+              {" "}
+              technologies.
+            </div>
           </div>
         </div>
       </div>
       <div className="flex items-start flex-row-reverse gap-10 pb-40 w-full px-[3rem]">
-        <div className="w-[40%] h-full">
-          <Image src={pic2} alt="" />
-        </div>
-        <div className="flex flex-wrap w-[60%] xl:text-[3rem] xl:leading-[4.5rem] gap-x-4">
-          <motion.div style={{ color: textColor }}>Our</motion.div>
-          <motion.div style={{ color: textColor }}> roadmap</motion.div>
-          <motion.div style={{ color: textColor }}> website</motion.div>
-          <motion.div style={{ color: textColor }}> curates</motion.div>
-          <motion.div style={{ color: textColor }}> insightful</motion.div>
-          <motion.div style={{ color: textColor }}> resources</motion.div>
-          <motion.div style={{ color: textColor }}> and</motion.div>
-          <motion.div style={{ color: textColor }}> showcases</motion.div>
-          <motion.div style={{ color: textColor }}> cutting-edge</motion.div>
-          <motion.div style={{ color: textColor }}> advancements</motion.div>
-          <motion.div style={{ color: textColor }}> like</motion.div>
-          <motion.div style={{ color: textColor }}> AI</motion.div>
-          <motion.div style={{ color: textColor }}> and</motion.div>
-          <motion.div style={{ color: textColor }}> 3D</motion.div>
-          <motion.div style={{ color: textColor }}> printing.</motion.div>
-          <motion.div style={{ color: textColor }}> Explore</motion.div>
-          <motion.div style={{ color: textColor }}> groundbreaking</motion.div>
-          <motion.div style={{ color: textColor }}> projects</motion.div>
-          <motion.div style={{ color: textColor }}> and</motion.div>
-          <motion.div style={{ color: textColor }}> navigate</motion.div>
-          <motion.div style={{ color: textColor }}> the</motion.div>
-          <motion.div style={{ color: textColor }}> exciting</motion.div>
-          <motion.div style={{ color: textColor }}> potential</motion.div>
-          <motion.div style={{ color: textColor }}> of</motion.div>
-          <motion.div style={{ color: textColor }}> these</motion.div>
-          <motion.div style={{ color: textColor }}> technologies,</motion.div>
-          <motion.div style={{ color: textColor }}> fostering</motion.div>
-          <motion.div style={{ color: textColor }}> a</motion.div>
-          <motion.div style={{ color: textColor }}> responsible</motion.div>
-          <motion.div style={{ color: textColor }}> future</motion.div>
-          <motion.div style={{ color: textColor }}> together.</motion.div>
+        <div className="w-[40%] h-full"><Image src={pic2} alt="" /></div>
+        <div className="flex flex-wrap w-[60%]  xl:text-[3rem]  xl:leading-[4.5rem] gap-x-4">
+          <div
+            className={`${scrollY > 3400 || pas5
+              ? " duration-500 text-black"
+              : " text-[#B8BEBE]"
+              }`}
+          >
+
+            Our{" "}
+          </div>
+          <div
+            className={`${scrollY > 3400 || pas5
+              ? " duration-500 text-black"
+              : " text-[#B8BEBE]"
+              }`}
+          >
+            {" "}
+            roadmap{" "}
+          </div> <div
+            className={`${scrollY > 3400 || pas5
+              ? " duration-500 text-black"
+              : " text-[#B8BEBE]"
+              }`}
+          >
+            {" "}
+            website{" "}
+          </div> <div
+            className={`${scrollY > 3400 || pas5
+              ? " duration-500 text-black"
+              : " text-[#B8BEBE]"
+              }`}
+          >
+            {" "}
+            curates{" "}
+          </div> <div
+            className={`${scrollY > 3400 || pas5
+              ? " duration-500 text-black"
+              : " text-[#B8BEBE]"
+              }`}
+          >
+            {" "}
+            insightful{" "}
+          </div> <div
+            className={`${scrollY > 3400 || pas5
+              ? " duration-500 text-black"
+              : " text-[#B8BEBE]"
+              }`}
+          >
+            {" "}
+            resources{" "}
+          </div> <div
+            className={`${scrollY > 3400 || pas5
+              ? " duration-500 text-black"
+              : " text-[#B8BEBE]"
+              }`}
+          >
+            {" "}
+            and{" "}
+          </div> <div
+            className={`${scrollY > 3400 || pas5
+              ? " duration-500 text-black"
+              : " text-[#B8BEBE]"
+              }`}
+          >
+            {" "}
+            showcases{" "}
+          </div> <div
+            className={`${scrollY > 3400 || pas5
+              ? " duration-500 text-black"
+              : " text-[#B8BEBE]"
+              }`}
+          >
+            {" "}
+            cutting-edge{" "}
+          </div> <div
+            className={`${scrollY > 3400 || pas5
+              ? " duration-500 text-black"
+              : " text-[#B8BEBE]"
+              }`}
+          >
+            {" "}
+            advancements{" "}
+          </div> <div
+            className={`${scrollY > 3400 || pas5
+              ? " duration-500 text-black"
+              : " text-[#B8BEBE]"
+              }`}
+          >
+            {" "}
+            like{" "}
+          </div> <div
+            className={`${scrollY > 3400 || pas5
+              ? " duration-500 text-black"
+              : " text-[#B8BEBE]"
+              }`}
+          >
+            {" "}
+            AI{" "}
+          </div> <div
+            className={`${scrollY > 3400 || pas5
+              ? " duration-500 text-black"
+              : " text-[#B8BEBE]"
+              }`}
+          >
+            {" "}
+            and{" "}
+          </div>
+          <div
+            className={`${scrollY > 3400 || pas5
+              ? " duration-500 text-black"
+              : " text-[#B8BEBE]"
+              }`}
+          >
+            {" "}
+            3D{" "}
+          </div>
+          <div
+            className={`${scrollY > 3400 || pas5
+              ? " duration-500 text-black"
+              : " text-[#B8BEBE]"
+              }`}
+          >
+            {" "}
+            printing.{" "}
+          </div>  <div
+            className={`${scrollY > 3400 || pas5
+              ? " duration-500 text-black"
+              : " text-[#B8BEBE]"
+              }`}
+          >
+            {" "}
+            Explore{" "}
+          </div>  <div
+            className={`${scrollY > 3400 || pas5
+              ? " duration-500 text-black"
+              : " text-[#B8BEBE]"
+              }`}
+          >
+            {" "}
+            groundbreaking{" "}
+          </div>  <div
+            className={`${scrollY > 3400 || pas5
+              ? " duration-500 text-black"
+              : " text-[#B8BEBE]"
+              }`}
+          >
+            {" "}
+            projects {" "}
+          </div>  <div
+            className={`${scrollY > 3400 || pas5
+              ? " duration-500 text-black"
+              : " text-[#B8BEBE]"
+              }`}
+          >
+            {" "}
+            and{" "}
+          </div>  <div
+            className={`${scrollY > 3400 || pas5
+              ? " duration-500 text-black"
+              : " text-[#B8BEBE]"
+              }`}
+          >
+            {" "}
+            navigate{" "}
+          </div>  <div
+            className={`${scrollY > 3400 || pas5
+              ? " duration-500 text-black"
+              : " text-[#B8BEBE]"
+              }`}
+          >
+            {" "}
+            the{" "}
+          </div>  <div
+            className={`${scrollY > 3400 || pas5
+              ? " duration-500 text-black"
+              : " text-[#B8BEBE]"
+              }`}
+          >
+            {" "}
+            exciting {" "}
+          </div>  <div
+            className={`${scrollY > 3400 || pas5
+              ? " duration-500 text-black"
+              : " text-[#B8BEBE]"
+              }`}
+          >
+            {" "}
+            potential{" "}
+          </div>
+          <div
+            className={`${scrollY > 3400 || pas5
+              ? " duration-500 text-black"
+              : " text-[#B8BEBE]"
+              }`}
+          >
+            {" "}
+            of{" "}
+          </div> <div
+            className={`${scrollY > 3400 || pas5
+              ? " duration-500 text-black"
+              : " text-[#B8BEBE]"
+              }`}
+          >
+            {" "}
+            these{" "}
+          </div> <div
+            className={`${scrollY > 3400 || pas5
+              ? " duration-500 text-black"
+              : " text-[#B8BEBE]"
+              }`}
+          >
+            {" "}
+            technologies,{" "}
+          </div> <div
+            className={`${scrollY > 3400 || pas5
+              ? " duration-500 text-black"
+              : " text-[#B8BEBE]"
+              }`}
+          >
+            {" "}
+            fostering {" "}
+          </div>
+          <div
+            className={`${scrollY > 3400 || pas5
+              ? " duration-500 text-black"
+              : " text-[#B8BEBE]"
+              }`}
+          >
+            {" "}
+            a{" "}
+          </div><div
+            className={`${scrollY > 3400 || pas5
+              ? " duration-500 text-black"
+              : " text-[#B8BEBE]"
+              }`}
+          >
+            {" "}
+            responsible{" "}
+          </div><div
+            className={`${scrollY > 3400 || pas5
+              ? " duration-500 text-black"
+              : " text-[#B8BEBE]"
+              }`}
+          >
+            {" "}
+            future {" "}
+          </div><div
+            className={`${scrollY > 3400 || pas5
+              ? " duration-500 text-black"
+              : " text-[#B8BEBE]"
+              }`}
+          >
+            {" "}
+            together.{" "}
+          </div>
         </div>
       </div>
     </div>

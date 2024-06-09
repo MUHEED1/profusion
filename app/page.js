@@ -6,6 +6,7 @@ import St0002 from "./components/st0002";
 import Okay from "@/public/icons/okay";
 import Rotating from "./components/rotating";
 import Svg from "@/public/icons/svg";
+import Marqueee from "./components/marquee";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Okay />
       <Rotating />
       <St0002 />
+      <Marqueee/>
       <Svg/>
       <Hero />
     </div>

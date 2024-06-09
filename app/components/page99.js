@@ -45,7 +45,7 @@ const Page99 = () => {
         </div>
         <div className="  text-[#b6a1de] text-[11px] xl:text-[12.5px]">
           <div className=" font-Avant text-[#5f2ccc] fontstyle leading-[4rem] text-[39px] xl:text-[56px] font-black pb-4 xl:pt-[3rem]">
-            SOCIAL INACTIVITY
+            STAY CONNECTED
           </div>
           <div className="  text-[#b6a1de] leading-[0.8rem]">
             FOR VERY OCCASIONAL AND UNPREDICTABLE NUGGETS OF USEFUL AND USELESS
@@ -54,22 +54,22 @@ const Page99 = () => {
           </div>
           <div className="flex justify-between pt-4 text-[#b6a1de] xl:pt-[3rem]">
             <div>INSTAGRAM</div>
-            <div>@BYSOMEFOLK</div>
+            <div>@PROFUSION</div>
           </div>
           <div className="h-[0.8px] w-full bg-[#5f2ccc] my-[0.4rem]"></div>
           <div className="flex justify-between ">
             <div>AWWWARDS</div>
-            <div>/SOMEFOLK</div>
+            <div>/PROFUSION</div>
           </div>
           <div className="h-[0.8px] w-full bg-[#5f2ccc] my-[0.4rem]"></div>
           <div className="flex justify-between">
             <div>LINKEDIN</div>
-            <div>/SOMEFOLK</div>
+            <div>/PROFUSION</div>
           </div>
           <div className="h-[0.8px] w-full bg-[#5f2ccc] my-[0.4rem] "></div>
           <div className=" flex justify-between ">
             <div>DRIBBBLE</div>
-            <div>/SOMEFOLK</div>
+            <div>/PROFUSION</div>
           </div>
         </div>
       </div>

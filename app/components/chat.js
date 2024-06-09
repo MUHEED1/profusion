@@ -2,6 +2,8 @@
 "use client"
 import React, { useState } from 'react';
 import talkWith from '../api/gpt';
+import {Accordion, AccordionItem} from "@nextui-org/react";
+import Padding from './padding';
 
 const Chat = () => {
   const [messages, setMessages] = useState([]);
@@ -30,8 +32,9 @@ const Chat = () => {
     }
 }
 
+
   return (
-    <div className="flex flex-col w-full pt-[5rem] pb-[3rem] font-Matter  mx-auto border border-gray-300 rounded-lg overflow-hidden">
+    <div className="flex flex-col w-full pt-[5rem] pb-[3rem] font-Matter  mx-auto  rounded-lg overflow-hidden">
       <div className="flex-1 p-4 overflow-y-scroll  ">
         <div className='h-[75vh]'>
 
@@ -61,11 +64,53 @@ const Chat = () => {
         />
         <button
           onClick={sendMessage}
-          className="py-2 px-4 bg-[#5f2cc1] text-white rounded-full"
+          className="py-2 px-5 bg-[#5f2cc1] text-white rounded-full"
         >
           Send
         </button>
       </div>
+      <Padding className={"pt-[3rem] min-w-[60rem] max-w-[60rem] mx-auto"}>
+
+      <Accordion className='text-[0.9rem]' >
+      <AccordionItem className='border-b py-2 font-semibold border-b-gray-500' 
+       key="1" aria-label="Accordion 1"  title="Start small">
+        <div className=' font-normal '>
+
+      Begin by implementing basic features like task creation and viewing before moving on to more complex functionalities.
+        </div>
+      </AccordionItem>
+      <AccordionItem
+      className='border-b py-2 font-semibold border-b-gray-500'
+        
+        
+        title="Documentation"
+        >
+        <div className=' font-normal '>
+
+        It's always better to read the Documentation and understand itself
+        </div>
+      </AccordionItem>
+      <AccordionItem className='border-b py-2 font-semibold border-b-gray-500' title="Testing">
+      <div className=' font-normal '>
+
+        Always Thorougly test your project to make it seamless
+        </div>
+      </AccordionItem>
+      <AccordionItem className='border-b py-2 font-semibold border-b-gray-500'   title="Set Goals">
+      <div className=' font-normal '>
+
+      Establish specific, measurable, achievable, relevant, and time-bound (SMART) goals for your project.
+      </div>
+      </AccordionItem>
+      <AccordionItem className='border-b py-2 font-semibold border-b-gray-500'   title="Plan and Document">
+      <div className=' font-normal '>
+
+      Create a Project Plan: Outline the major phases, tasks, milestones, and deadlines.
+Documentation: Maintain comprehensive documentation from the start, including requirements, design decisions, and code comments.
+</div>
+      </AccordionItem>
+    </Accordion>
+          </Padding>
     </div>
   );
 };
