@@ -24,6 +24,7 @@ import img16 from "@/public/images/ad2.jpg";
 import img17 from "@/public/images/ad3.jpg";
 import img18 from "@/public/images/ad4.jpg";
 import Footer from "./footer";
+import Link from "next/link";
 
 const Project = () => {
   const [activeTab, setActiveTab] = useState(1);
@@ -70,7 +71,7 @@ const Project = () => {
        `}
             style={{ marginLeft: "-0.5rem" }}
           >
-            <div
+            {/* <div
               className={clsx(
                 "  px-8 py-[0.5rem]   cursor-pointer  relative z-40 rounded-full  transition-all font-manrope font-semibold text-[1rem] md:text-[1.1rem] duration-1000",
                 activeTab == 1 ? "text-[#FFFFFF]" : "text-[#2E303A]"
@@ -87,7 +88,8 @@ const Project = () => {
               <div className="flex">
                 <div>All</div>
               </div>
-            </div>
+            </div> */}
+<Link href={"/projectdetails"}>
 
             <div
               className={clsx(
@@ -95,17 +97,20 @@ const Project = () => {
                 activeTab == 2 ? "text-[#FFFFFF]" : "text-[#252525]"
               )}
               onClick={() => changeTab(2)}
-            >
+              >
               {activeTab == 2 && (
                 <motion.span
-                  layoutId="tabs"
-                  className={`  border border-[#f0f0f0] px-8 py-[0.5rem] absolute top-0 rounded-full left-0 w-full h-full -z-10 text-white bg-[#2E303A]      `}
+                layoutId="tabs"
+                className={`  border border-[#f0f0f0] px-8 py-[0.5rem] absolute top-0 rounded-full left-0 w-full h-full -z-10 text-white bg-[#2E303A]      `}
                 />
               )}
               <div className=" flex gap-1 items-center">
                 <div className="  ">Python</div>
               </div>
             </div>
+              </Link>
+<Link href={"/cdetails"}>
+
             <div
               className={clsx(
                 " px-8 py-[0.5rem]   cursor-pointer  relative z-40 rounded-full font-manrope font-semibold  transition-all text-[1rem] md:text-[1.1rem] duration-1000",
@@ -123,6 +128,9 @@ const Project = () => {
                 <div className="  ">C++</div>
               </div>
             </div>
+            </Link>
+<Link href={"/javadetails"}>
+
             <div
               className={clsx(
                 " px-8 py-[0.5rem]   cursor-pointer  relative z-40 rounded-full font-manrope font-semibold  transition-all text-[1rem] md:text-[1.1rem] duration-1000",
@@ -140,6 +148,9 @@ const Project = () => {
                 <div className="  ">Java</div>
               </div>
             </div>
+            </Link>
+<Link href={"/projectdetails"}>
+            
             <div
               className={clsx(
                 " px-8 py-[0.5rem]   cursor-pointer  relative z-40 rounded-full font-manrope font-semibold  transition-all text-[1rem] md:text-[1.1rem] duration-1000",
@@ -157,6 +168,9 @@ const Project = () => {
                 <div className="  ">GO</div>
               </div>
             </div>
+            </Link>
+<Link href={"/projectdetails"}>
+
             <div
               className={clsx(
                 " px-8 py-[0.5rem]   cursor-pointer  relative z-40 rounded-full font-manrope font-semibold  transition-all text-[1rem] md:text-[1.1rem] duration-1000",
@@ -174,6 +188,9 @@ const Project = () => {
                 <div className="  ">Ruby</div>
               </div>
             </div>
+            </Link>
+<Link href={"/projectdetails"}>
+
             <div
               className={clsx(
                 " px-8 py-[0.5rem]   cursor-pointer  relative z-40 rounded-full font-manrope font-semibold  transition-all text-[1rem] md:text-[1.1rem] duration-1000",
@@ -191,6 +208,7 @@ const Project = () => {
                 <div className="  ">C#</div>
               </div>
             </div>
+            </Link>
             <div
               className={clsx(
                 " px-8 py-[0.5rem]   cursor-pointer  relative z-40 rounded-full font-manrope font-semibold  transition-all text-[1rem] md:text-[1.1rem] duration-1000",

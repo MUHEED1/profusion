@@ -34,15 +34,15 @@ const Hero = () => {
 
 <div className=' pt-[60rem] space-y-3'>
       <div className=' font-Avant fontstyle font-semibold max-w-[30rem] leading-[3rem] text-[2.5rem]'>Discover and Explore the world of tech</div>
-      <div className='px-5 rounded-full py-2 bg-black text-white w-max  font-Matter'>Explore</div>
+      {/* <div className='px-5 rounded-full py-2 bg-black text-white w-max  font-Matter'>Explore</div> */}
 </div>
 <div className=' pt-[50rem] space-y-3'>
       <div className=' fontstyle font-Avant font-semibold max-w-[45rem] text-[2.5rem]'>Your One Stop Solution To Kickstart Your Journey and Explore the world of tech</div>
-      <div className='px-5 rounded-full py-2 bg-black text-white w-max  font-Matter'>Explore</div>
+      {/* <div className='px-5 rounded-full py-2 bg-black text-white w-max  font-Matter'>Explore</div> */}
 </div>
 <div className=' pt-[50rem] space-y-3'>
       <div className=' fontstyle font-Avant font-semibold max-w-[30rem] text-[2.5rem]'>Be Ahead of your peers</div>
-      <div className='px-5 rounded-full py-2 bg-white text-black w-max  font-Matter'>Explore</div>
+      {/* <div className='px-5 rounded-full py-2 bg-white text-black w-max  font-Matter'>Explore</div> */}
 </div>
 </Padding>
       </div>
