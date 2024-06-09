@@ -1,4 +1,5 @@
 import React from "react";
+
 import Padding from "./padding";
 import Plancard from "./plancard";
 import Image from "next/image";
@@ -17,24 +18,21 @@ import img16 from "@/public/images/ad2.jpg";
 import img17 from "@/public/images/ad3.jpg";
 import img18 from "@/public/images/ad4.jpg";
 
-const Projectdetails = () => {
+const Cdetails = () => {
   return (
     <div className="pt-[14rem]">
       <Padding>
         <div className="flex gap-[4rem] ">
           <div className="w-[40%]">
             <div className="text-[24px] font-Avant fontstyle font-bold text-[#FFFFFF] pt-[1rem] up ">
-              Python
+              C++
             </div>
             <div className=" font-Matter text-[16px] font-[500] pt-[0.5rem] w-[93%]">
-              Python is a versatile and user-friendly programming language known
-              for its simplicity and readability. With a vast ecosystem of
-              libraries and frameworks, Python empowers developers to tackle
-              diverse tasks, from web development to data analysis and machine
-              learning. Its clean syntax and strong community support make
-              Python an ideal choice for beginners and seasoned professionals
-              alike, fostering a culture of innovation and collaboration in the
-              world of programming.
+              C++ is a powerful, high-performance programming language that
+              extends the capabilities of C. It is widely used for
+              system/software development, game development, and real-time
+              simulations due to its efficiency and control over system
+              resources.
             </div>
           </div>
           <div className="rounded-[30px]">
@@ -106,11 +104,11 @@ const Projectdetails = () => {
 
         <div className="font-Avant fontstyle up font-bold text-[2rem] pt-[3rem] text-[#ffffff]">
           <div className="text-[2.5rem] py-[3rem] font-semibold">USE CASES</div>
-          <div>AI/ML</div>
+          <div> Web Development</div>
           <div className="py-[2rem] grid grid-cols-4 gap-6">
             <Detailscard
               src={img7}
-              lable={"AI/ML"}
+              lable={"Web Developement"}
               Heading={"Deep learning"}
               content={
                 "This project involves building a model to classify images into various categories using deep learning techniques."
@@ -118,7 +116,7 @@ const Projectdetails = () => {
             />
             <Detailscard
               src={img8}
-              lable={"AI/ML"}
+              lable={"Web Developement"}
               Heading={"Deep learning"}
               content={
                 "This project involves building a model to classify images into various categories using deep learning techniques."
@@ -126,7 +124,7 @@ const Projectdetails = () => {
             />
             <Detailscard
               src={img9}
-              lable={"AI/ML"}
+              lable={"Web Developement"}
               Heading={"Deep learning"}
               content={
                 "This project involves building a model to classify images into various categories using deep learning techniques."
@@ -134,7 +132,7 @@ const Projectdetails = () => {
             />
             <Detailscard
               src={img10}
-              lable={"AI/ML"}
+              lable={"Web Developement"}
               Heading={"Deep learning"}
               content={
                 "This project involves building a model to classify images into various categories using deep learning techniques."
@@ -221,4 +219,4 @@ const Projectdetails = () => {
   );
 };
 
-export default Projectdetails;
+export default Cdetails;
