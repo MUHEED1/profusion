@@ -76,3 +76,7 @@ body {
 .loader {
   animation: rotation 1.5s linear infinite;
 }
+/* .bg-radial-gradient {
+  background-image: radial-gradient(ellipse 120% 90% at 50% 10%, #423657, #111111);
+  border: 1px solid #f9b3d0;
+  transition: all 1s ease; */
