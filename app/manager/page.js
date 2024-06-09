@@ -11,12 +11,13 @@ import Youtube from '../components/youtube'
 
 const Page = () => {
     return (
-        <div className=''>
+        <div className="z-10 relative bg-[#101010]">
+
             <Task />
             <Resources />
             <Code1 />
-            <Accordionn/>
-            <Youtube/>
+            <Accordionn />
+            <Youtube />
         </div>
     )
 }

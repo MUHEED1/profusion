@@ -3,7 +3,7 @@ import Aboutus from "../components/aboutus";
 
 const Page = () => {
   return (
-    <div>
+    <div className="z-10 relative">
       <Aboutus />
     </div>
   );

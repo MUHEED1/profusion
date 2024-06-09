@@ -17,7 +17,7 @@ import Grey from '@/public/icons/grey'
 const Code1 = () => {
     return (
         <div>
-            <div className='flex px-[3rem] items-start pt-16 gap-52 relative' >
+            <div className='flex px-[3rem] items-start pt-16 gap-52 relative bg-[#101010]' >
                 <div className="text-[40px] font-Avant fontstyle font-bold text-[#FFFFFF] w-min sticky top-32  ">
                     Explaination of code
                 </div>

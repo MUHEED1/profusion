@@ -3,7 +3,7 @@ import Project from "../components/project";
 
 const Page = () => {
   return (
-    <div>
+    <div className="z-10 relative">
       <Project />
     </div>
   );

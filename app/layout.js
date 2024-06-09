@@ -6,6 +6,7 @@ import { NextUIProvider } from "@nextui-org/react";
 import Navbar from "./components/navbar";
 import Lenis1 from "./components/lenis";
 import Footer from "./components/footer";
+import Empty from "./components/empty";
 
 export const metadata = {
   title: "Create Next App",
@@ -18,10 +19,11 @@ export default function RootLayout({ children }) {
       <body>
         <NextUIProvider>
           <Navbar />
-<Lenis1>
-          {children}
-</Lenis1>
-<Footer/>
+          <Lenis1>
+            {children}
+          </Lenis1>
+          <Empty />
+          <Footer />
         </NextUIProvider>
       </body>
     </html>

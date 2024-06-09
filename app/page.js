@@ -10,12 +10,12 @@ import Marqueee from "./components/marquee";
 
 export default function Home() {
   return (
-    <div>
+    <div className="z-10 relative">
       <Okay />
       <Rotating />
       <St0002 />
-      <Marqueee/>
-      <Svg/>
+      <Marqueee />
+      <Svg />
       <Hero />
     </div>
   );

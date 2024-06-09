@@ -1,12 +1,12 @@
-import React from 'react'
-import Title from '../components/single'
+import React from "react";
+import Title from "../components/single";
 
 const Page = () => {
   return (
-    <div>
-      <Title/>
+    <div className="z-10 relative">
+      <Title />
     </div>
-  )
-}
+  );
+};
 
-export default Page
+export default Page;
