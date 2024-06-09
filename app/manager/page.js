@@ -6,6 +6,7 @@ import Task from '../components/task'
 import Resources from '../components/resources'
 import { Code } from '@nextui-org/react'
 import Code1 from '../components/code'
+import Accordionn from '../components/accordionn'
 
 const Page = () => {
     return (
@@ -13,6 +14,7 @@ const Page = () => {
             <Task />
             <Resources />
             <Code1 />
+            <Accordionn/>
         </div>
     )
 }

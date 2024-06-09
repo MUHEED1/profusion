@@ -3,6 +3,19 @@ import Padding from "./padding";
 import Plancard from "./plancard";
 import Image from "next/image";
 import src from "@/public/images/image7.jpg";
+import Detailscard from "./detailscard";
+import img7 from "@/public/images/ml1.jpg";
+import img8 from "@/public/images/ml2.jpg";
+import img9 from "@/public/images/ml3.jpg";
+import img10 from "@/public/images/ml4.jpg";
+import img11 from "@/public/images/da1.jpg";
+import img12 from "@/public/images/da2.jpg";
+import img13 from "@/public/images/da3.jpg";
+import img14 from "@/public/images/da4.jpg";
+import img15 from "@/public/images/ad1.jpg";
+import img16 from "@/public/images/ad2.jpg";
+import img17 from "@/public/images/ad3.jpg";
+import img18 from "@/public/images/ad4.jpg";
 
 const Projectdetails = () => {
   return (
@@ -66,7 +79,7 @@ const Projectdetails = () => {
             text5={"Basic File Handling"}
           />
           <Plancard
-            heading={"Beginner"}
+            heading={"Intermediate"}
             text1={"Basic Syntax and Variables"}
             text2={"Data Types and Data Structures"}
             text3={"Control Flow"}
@@ -74,7 +87,7 @@ const Projectdetails = () => {
             text5={"Basic File Handling"}
           />
           <Plancard
-            heading={"Beginner"}
+            heading={"Expert"}
             text1={"Basic Syntax and Variables"}
             text2={"Data Types and Data Structures"}
             text3={"Control Flow"}
@@ -82,13 +95,126 @@ const Projectdetails = () => {
             text5={"Basic File Handling"}
           />
           <Plancard
-            heading={"Beginner"}
+            heading={"Pro"}
             text1={"Basic Syntax and Variables"}
             text2={"Data Types and Data Structures"}
             text3={"Control Flow"}
             text4={"Functions"}
             text5={"Basic File Handling"}
           />
+        </div>
+
+        <div className="font-Avant fontstyle up font-bold text-[2rem] pt-[3rem] text-[#ffffff]">
+          <div className="text-[2.5rem] py-[3rem] font-semibold">USE CASES</div>
+          <div>AI/ML</div>
+          <div className="py-[2rem] grid grid-cols-4 gap-6">
+            <Detailscard
+              src={img7}
+              lable={"AI/ML"}
+              Heading={"Deep learning"}
+              content={
+                "This project involves building a model to classify images into various categories using deep learning techniques. The model is trained on a dataset of labeled images and achieves high accuracy in prediction."
+              }
+            />
+            <Detailscard
+              src={img8}
+              lable={"AI/ML"}
+              Heading={"Deep learning"}
+              content={
+                "This project involves building a model to classify images into various categories using deep learning techniques. The model is trained on a dataset of labeled images and achieves high accuracy in prediction."
+              }
+            />
+            <Detailscard
+              src={img9}
+              lable={"AI/ML"}
+              Heading={"Deep learning"}
+              content={
+                "This project involves building a model to classify images into various categories using deep learning techniques. The model is trained on a dataset of labeled images and achieves high accuracy in prediction."
+              }
+            />
+            <Detailscard
+              src={img10}
+              lable={"AI/ML"}
+              Heading={"Deep learning"}
+              content={
+                "This project involves building a model to classify images into various categories using deep learning techniques. The model is trained on a dataset of labeled images and achieves high accuracy in prediction."
+              }
+            />
+          </div>
+          <div className="font-Avant fontstyle up font-bold text-[2rem] pt-[3rem] text-[#ffffff]">
+            Automation and Scripting
+          </div>
+          <div className="py-[1rem] grid grid-cols-4 gap-6">
+            <Detailscard
+              src={img11}
+              lable={"Automation"}
+              Heading={"Deep learning"}
+              content={
+                "This project involves building a model to classify images into various categories using deep learning techniques. The model is trained on a dataset of labeled images and achieves high accuracy in prediction."
+              }
+            />
+            <Detailscard
+              src={img12}
+              lable={"Automation"}
+              Heading={"Deep learning"}
+              content={
+                "This project involves building a model to classify images into various categories using deep learning techniques. The model is trained on a dataset of labeled images and achieves high accuracy in prediction."
+              }
+            />
+            <Detailscard
+              src={img13}
+              lable={"Automation"}
+              Heading={"Deep learning"}
+              content={
+                "This project involves building a model to classify images into various categories using deep learning techniques. The model is trained on a dataset of labeled images and achieves high accuracy in prediction."
+              }
+            />
+            <Detailscard
+              src={img14}
+              lable={"Automation"}
+              Heading={"Deep learning"}
+              content={
+                "This project involves building a model to classify images into various categories using deep learning techniques. The model is trained on a dataset of labeled images and achieves high accuracy in prediction."
+              }
+            />
+          </div>
+          <div className="font-Avant fontstyle up font-bold text-[2rem] pt-[3rem] text-[#000000]">
+            Data Analysis and visualization
+          </div>
+          <div className="py-[1rem] grid grid-cols-4 gap-6">
+            <Detailscard
+              src={img15}
+              lable={"Analysis"}
+              Heading={"Deep learning"}
+              content={
+                "This project involves building a model to classify images into various categories using deep learning techniques. The model is trained on a dataset of labeled images and achieves high accuracy in prediction."
+              }
+            />
+            <Detailscard
+              src={img16}
+              lable={"Analysis"}
+              Heading={"Deep learning"}
+              content={
+                "This project involves building a model to classify images into various categories using deep learning techniques. The model is trained on a dataset of labeled images and achieves high accuracy in prediction."
+              }
+            />
+            <Detailscard
+              src={img17}
+              lable={"Analysis"}
+              Heading={"Deep learning"}
+              content={
+                "This project involves building a model to classify images into various categories using deep learning techniques. The model is trained on a dataset of labeled images and achieves high accuracy in prediction."
+              }
+            />
+            <Detailscard
+              src={img18}
+              lable={"Analysis"}
+              Heading={"Deep learning"}
+              content={
+                "This project involves building a model to classify images into various categories using deep learning techniques. The model is trained on a dataset of labeled images and achieves high accuracy in prediction."
+              }
+            />
+          </div>
         </div>
       </Padding>
     </div>
