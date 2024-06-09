@@ -4,15 +4,15 @@ import Marquee from "react-fast-marquee";
 
 const Marqueee = () => {
   return (
-    <div className="font-Avant text-[2.5rem] h-[20rem] flex text-[#b6a1de] bg-[#101010] items-center font-semibold fontstyle">
+    <div className="font-Avant text-[2.5rem] overflow-hidden h-[10rem] flex items-end text-[#b6a1de] bg-[#101010]  font-semibold fontstyle">
       <Link href={"/projectdetails"}>
         <Marquee
           pauseOnHover={true}
           speed={100}
           gradientWidth={300}
-          gradientColor="black"
+          gradientColor="#101010"
           gradient={true}
-          className="flex  cursor-pointer"
+          className="flex bg-[#101010] cursor-pointer"
         >
           <div className="px-10 flex items-center">
             C<span className="text-[3rem] mb-2">++</span>

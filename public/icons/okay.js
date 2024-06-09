@@ -30,7 +30,7 @@ const Okay = () => {
 
   return (
     <motion.div
-      className="h-screen w-screen bg-black"
+      className="h-screen w-screen bg-[#101010]"
       onMouseMove={handleMouseMove}
       style={{
         display: "flex",

@@ -19,7 +19,7 @@ const Svg = () => {
       <div
         style={{
           background:
-            "linear-gradient(to bottom, rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.7) 80%, transparent)",
+            "linear-gradient(to bottom, rgba(16, 16, 16, 1),rgba(16, 16, 16, 0.7) 80%, transparent)",
           paddingTop: "5rem",
         }}
         className="flex w-full justify-center sticky z-20 top-0 pt-[3rem]"
