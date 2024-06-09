@@ -5,28 +5,29 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import ScrollyVideo from 'scrolly-video/dist/ScrollyVideo.cjs.jsx';
 import Padding from './padding';
 import Svg from '@/public/icons/svg';
+import Image from 'next/image';
 
 const Hero = () => {
   const { scrollYProgress } = useScroll();
   const maf=useRef()
 
   // Define animations for scaling and opacity
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 2]);
+  const scale = useTransform(scrollYProgress, [0, 1], [0.2, 1.8]);
   const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
 
   return (
-    <div ref={maf} className='h-[500vh] w-full  relative '>
-      {/* <motion.video 
+    <div ref={maf} className='h-[500vh] w-full mt-[15rem]  relative '>
+      <motion.video 
         autoPlay
         playsInline
         muted
         loop
         src='/images/video.mp4'
         style={{ scale, opacity }}
-        className='sticky  top-0'
-    /> */}
-      <ScrollyVideo src="/images/video.mp4" />
-    <div className='absolute w-screen h-full left-0 top-0 bg-[#0000003a]'></div>
+        className='sticky  top-10 rounded-t-[3rem]'
+    />
+      {/* <ScrollyVideo src="/images/video.mp4" /> */}
+    {/* <div className='absolute w-screen h-full left-0 top-0 bg-[#0000003a]'></div> */}
       <div>
 
 <Padding className={"absolute z-40 top-[20rem]"}>

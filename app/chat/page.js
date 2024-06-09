@@ -7,8 +7,8 @@ const Page = () => {
   return (
     <div>
       <Chat/>
-      <Svg/>
-      <Okay/>
+      {/* <Svg/>
+      <Okay/> */}
     </div>
   )
 }
