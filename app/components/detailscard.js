@@ -14,7 +14,9 @@ const Detailscard = ({ src, lable, Heading, content }) => {
         {" "}
         {Heading}
       </div>
-      <div className="text-[grey] text-[1rem] pb-[1.5rem]">{content}</div>
+      <div className="text-[grey] text-[1rem] pb-[1.5rem] font-Matter">
+        {content}
+      </div>
       <div className=" flex justify-between items-center">
         <div className="text-[#535353] font-Matter text-[0.89rem]">
           19.5K People Viewed
@@ -44,7 +46,7 @@ const Detailscard = ({ src, lable, Heading, content }) => {
               />
             </svg>
           </div>
-          <div className="text-[#FFFFFF] text-[1rem]">View</div>
+          <div className="text-[#FFFFFF] text-[1rem] font-Matter">View</div>
         </div>
       </div>
     </div>
