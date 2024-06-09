@@ -204,7 +204,7 @@ const St0002 = () => {
       </div> */}
         {/* //lg */}
         <div className="w-full h-full object-cover"><Image className=" h-full" width={700} height={500} src={pic} alt="" /></div>
-        <div className="hidden lg:block text-[1rem] py-20 xl:hidden  xl:text-3xl">
+        {/* <div className="hidden lg:block text-[1rem] py-20 xl:hidden  xl:text-3xl">
 
           <div>
             <div
@@ -237,10 +237,10 @@ const St0002 = () => {
               innovative projects and cutting-edge technologies.
             </div>
           </div>
-        </div>
-        
+        </div> */}
+
         {/* //small   bg */}
-        <div className="hidden  py-0 xl:flex  xl:text-[3rem]  xl:leading-[4rem]">
+        <div className="hidden  py-0 lg:flex  lg:text-[2.275rem]  lg:leading-none">
           <div className=" flex flex-wrap gap-x-2 items-center sp ">
             <div
               className={`${scrollY > 2340 ? "md:text-black" : "md:text-[#B8BEBE]"
@@ -373,9 +373,9 @@ const St0002 = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-start flex-row-reverse gap-10 pb-40 w-full px-[3rem]">
-        <div className="w-[40%] h-full"><Image src={pic2} alt="" /></div>
-        <div className="flex flex-wrap w-[60%]  xl:text-[3rem]  xl:leading-[4.5rem] gap-x-4">
+      <div className="flex items-start flex-row-reverse gap-5 pb-40 w-full px-[3rem]">
+        <div className="w-[45%]  min-h-full "><Image className="min-h-full min-w-full object-fit" src={pic2} alt="" /></div>
+        <div className="flex flex-wrap w-[55%]  xl:text-[2.275rem]  xl:leading-[2.7rem] gap-x-4">
           <div
             className={`${scrollY > 3400 || pas5
               ? " duration-500 text-black"
