@@ -18,7 +18,7 @@ const Page99 = () => {
         </div>
         <div className="xl:h-[68vh] overflow-hidden rounded-md">
           <img className="my-12 xl:hidden" src="/images/pink.png" alt="" />
-          <img className="hidden xl:block" src="/images/pink.png" alt="" />
+          <img className="hidden xl:block" src="/images/pink2.png" alt="" />
         </div>
         <div className=" font-Book text-[10.799px] xl:text-[12px] xl:pt-[7rem]">
           <div className=" font-Ava text-white  font-style text-[39px] xl:text-[25px] font-bold">
@@ -35,14 +35,12 @@ const Page99 = () => {
             learning and growth with DiscoverTech.
           </div>
           <div className="xl:h-[68vh] overflow-hidden rounded-md">
-          <img className="my-12 xl:hidden" src="/images/pink.png" alt="" />
-          <img className="hidden xl:block" src="/images/pink.png" alt="" />
-        </div>
+            <img className="my-12 xl:hidden" src="/images/pink.png" alt="" />
+            <img className="hidden xl:block" src="/images/pink.png" alt="" />
+          </div>
         </div>
 
-        <div className="max-h-[450px] max-w-[342.5px]  xl:min-h-[38vh] xl:min-w-full overflow-hidden">
-         
-        </div>
+        <div className="max-h-[450px] max-w-[342.5px]  xl:min-h-[38vh] xl:min-w-full overflow-hidden"></div>
         <div className="  text-[#b6a1de] text-[11px] xl:text-[12.5px]">
           <div className=" font-Avant text-[#5f2ccc] fontstyle leading-[4rem] text-[39px] xl:text-[56px] font-black pb-4 xl:pt-[3rem]">
             STAY CONNECTED
