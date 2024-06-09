@@ -1,23 +1,20 @@
 import Image from "next/image";
 import React from "react";
 
-const Detailscard = ({ src }) => {
+const Detailscard = ({ src, lable, Heading, content }) => {
   return (
     <div className="p-[0.7rem]   bg-gradient-to-b from-[#ebe8e8] to-[#6b696954] rounded-2xl shadow-xl">
       <div className="w-[full] h-[230px]   mb-5">
         <Image src={src} className=" object-cover rounded-xl h-[230px]" />
       </div>
-      <div className="text-[0.85rem] flex justify-center rounded-[999px] font-Matter bg-[#E1E1E1] p-[0.7rem] text-[#000000]  w-[20%] ">
-        Lable
+      <div className="text-[0.85rem] flex justify-center rounded-[999px] font-Matter bg-[#E1E1E1] p-[0.7rem] text-[#000000]  w-max ">
+        {lable}
       </div>
       <div className=" text-[1.3rem] py-[0.5rem] text-[#000000] font-Matter font-semibold ">
         {" "}
-        Heading
+        {Heading}
       </div>
-      <div className="text-[grey] text-[1rem] pb-[1.5rem]">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
-        dolorum.
-      </div>
+      <div className="text-[grey] text-[1rem] pb-[1.5rem]">{content}</div>
       <div className=" flex justify-between items-center">
         <div className="text-[#535353] font-Matter text-[0.89rem]">
           19.5K People Viewed
