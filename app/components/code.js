@@ -18,7 +18,7 @@ const Code1 = () => {
     return (
         <div>
             <div className='flex px-[3rem] items-start pt-16 gap-52 relative bg-[#101010]' >
-                <div className="text-[40px] font-Avant fontstyle font-bold text-[#FFFFFF] w-min sticky top-32  ">
+                <div className="text-[40px] font-Avant fontstyle font-bold text-[#FFFFFF] w-min sticky top-32 pb-[20rem]  ">
                     Explaination of code
                 </div>
                 <div className='w-[55%]'>

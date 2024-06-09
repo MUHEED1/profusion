@@ -56,7 +56,7 @@ const Title = () => {
   }
 
   return (
-    <div className=" pt-[10rem] py-20  rounded-b-[45px] border-b border-[#e4e4e4] ">
+    <div className=" pt-[10rem] py-20  bg-black relative z-10 rounded-b-[45px] border-b border-[#e4e4e4] ">
       <Padding
         className={
           " font-Matter text-white font-medium text-[0.85rem] flex flex-col "

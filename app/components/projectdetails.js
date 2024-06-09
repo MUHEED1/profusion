@@ -19,7 +19,7 @@ import img18 from "@/public/images/ad4.jpg";
 
 const Projectdetails = () => {
   return (
-    <div className="pt-[14rem]">
+    <div className="py-[14rem] rounded-b-[4rem] relative z-10 bg-black">
       <Padding>
         <div className="flex gap-[4rem] ">
           <div className="w-[40%]">

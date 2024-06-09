@@ -42,7 +42,7 @@ const Allblogs = () => {
     <>
       <Padding
         className={
-          " py-20 font-Matter  rounded-b-[45px] border-b border-[#e4e4e4]"
+          " py-20 font-Matter relative z-10 bg-black  rounded-b-[45px] border-b border-[#e4e4e4]"
         }
       >
         <div className=" pb-10 ">

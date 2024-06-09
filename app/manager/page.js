@@ -14,7 +14,7 @@ const Page = () => {
     return (
         <div className="z-10 relative bg-[#101010] pb-40 rounded-b-[45px] border-b border-[#e4e4e4]">
 
-            <Task />
+            <Task content={"Python is a booming language. With its capacity in versatility, it can be used for Backend, Automation and also AI/ML"} heading={"PYTHON"} src={pic}  />
             <Resources />
             <Code1 />
             <Accordionn />

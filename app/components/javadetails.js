@@ -19,7 +19,7 @@ import img18 from "@/public/images/ad4.jpg";
 
 const Javadetails = () => {
   return (
-    <div className="pt-[14rem]">
+    <div className="py-[14rem] rounded-b-[4rem] relative bg-black z-10">
       <Padding>
         <div className="flex gap-[4rem] ">
           <div className="w-[40%]">

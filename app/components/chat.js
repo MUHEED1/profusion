@@ -33,7 +33,7 @@ const Chat = () => {
 
 
   return (
-    <div className="flex flex-col w-full pt-[5rem] pb-[3rem] font-Matter  mx-auto  rounded-lg overflow-hidden">
+    <div className="flex flex-col w-full pt-[5rem] bg-black relative z-10 pb-[3rem] font-Matter  mx-auto  rounded-lg overflow-hidden">
       <div className="flex-1 p-4 overflow-y-scroll  ">
         <div className='h-[75vh]'>
 

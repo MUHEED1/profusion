@@ -4,7 +4,7 @@ import React from "react";
 
 const Task = ({ heading, content, src }) => {
   return (
-    <div className="bg-[#111111] px-[3rem] py-28">
+    <div className="bg-[#111111] relative z-10 px-[3rem] py-28">
       <div className="flex gap-28 pt-10">
         <div>
           <div className="text-[40px] font-Avant fontstyle font-bold text-[#FFFFFF] pt-16 w-max">

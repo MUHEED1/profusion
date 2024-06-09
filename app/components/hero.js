@@ -16,7 +16,7 @@ const Hero = () => {
   const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
 
   return (
-    <div ref={maf} className='h-[500vh] w-full pt-[15rem] bg-[#101010]  relative '>
+    <div ref={maf} className='h-[500vh] w-full pt-[15rem] bg-[#101010] rounded-b-[4rem]  relative '>
       <motion.video 
         autoPlay
         playsInline
