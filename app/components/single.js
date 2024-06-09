@@ -48,18 +48,20 @@ const Title = () => {
     fetchData();
   }, [slug]);
 
-//   if (loading) {
-//     return (
-//       <Padding>
-//         <div className=" py-20 ">
-//           <Singleblogskeleton />
-//         </div>
-//       </Padding>
-//     );
-//   }
+  if(loading)
+    {
+        return(
+            <div className=' h-screen w-full bg-[#000000] flex items-center justify-center' >
+        <div className=' flex h-[7px] w-[400px] border-[1px] border-[grey] bg-[#000000] rounded-[10px] overflow-hidden relative shadow-lg ' >
+            <div className=' flex h-full w-[208px] loading rounded-[10px]  ' >
+            </div>
+        </div>
+    </div>
+        )
+    }
 
   return (
-    <div className=" py-20 ">
+    <div className=" pt-[10rem] py-20 ">
       <Padding
         className={
           " font-Matter text-white font-medium text-[0.85rem] flex flex-col "

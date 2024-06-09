@@ -2,13 +2,16 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import {motion} from "framer-motion"
+import Link from "next/link";
 
 const Ytcards = ({ src, Heading }) => {
   const [isin,setisin]=useState()
 
   
   return (
+    <Link href={"https://www.youtube.com/watch?v=y_1-hOBcLas"}>
     <motion.div
+    
     animate={{scale:isin? 1.2:1}}
     transition={{duration:0.4,ease:"easeOut"}} 
     onMouseEnter={()=>setisin(true)} onMouseLeave={()=>setisin(false)} className="p-[0.7rem]   bg-[#282828]  rounded-2xl shadow-xl">
@@ -56,6 +59,7 @@ const Ytcards = ({ src, Heading }) => {
         </div>
       </div>
     </motion.div>
+    </Link>
   );
 };
 

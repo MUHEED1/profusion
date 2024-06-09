@@ -28,21 +28,34 @@ const Allblogs = () => {
     fetchData();
   }, []);
 
+  if(loading)
+    {
+        return(
+            <div className=' h-screen w-full bg-[#000000] flex items-center justify-center' >
+        <div className=' flex h-[7px] w-[400px] border-[1px] border-[grey] bg-[#000000] rounded-[10px] overflow-hidden relative shadow-lg ' >
+            <div className=' flex h-full w-[208px] loading rounded-[10px]  ' >
+            </div>
+        </div>
+    </div>
+        )
+    }
+
   
   return (
     <>
       <Padding className={" py-20 font-Matter"}>
         <div className=" pb-10 ">
-          <div className=" text-[#222222] font-Avant fontstyle pb-1 font-semibold text-[2rem] md:text-[2.5rem] md:pb-1 xl:text-[3rem]  ">
+          <div className=" text-[white] font-Avant fontstyle pb-1 font-semibold text-[2rem] md:text-[2.5rem] md:pb-1 xl:text-[3rem]  ">
             Blogs
           </div>
           <div className=" text-[#7A8597] text-[0.95rem] w-[90%]  max-w-[340px] ">
-            Is the paint on your balcony railing peeling off? Do you want car
-            rims that match the col
+            Some Projects built by our community members
+            
           </div>
         </div>
         
           <div className=" grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-10  ">
+            
             {data?.map((blog) => (
               <div key={blog.id}>
                 {console.log("Blog ID:", blog.id)} {/* Log the blog ID */}
