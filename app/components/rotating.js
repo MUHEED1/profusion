@@ -1,6 +1,8 @@
-import React from "react";
+"use client";
+import React, { useEffect, useRef } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
 import Circle from "./circle";
+import Page99 from "./page99";
 
 const Rotating = () => {
   const maf = useRef(null);
@@ -15,21 +17,21 @@ const Rotating = () => {
 
   const t = useTransform(scrollYProgress, [0.1, 0.5], ["0rem", "0rem"]);
 
-  const pd = useTransform(scrollYProgress, [0.643, 0.74], ["32%", "15%"]);
+  const pd = useTransform(scrollYProgress, [0, 0.74], ["39%", "6%"]);
   return (
     <div className="bg-[#101010]">
       <div className="  relative">
         <motion.div
-          className={` hidden lg:block sticky -z-10`}
+          className={` hidden lg:block sticky z-10`}
           style={{ top: t }}
         >
           {/* ${ scrollY>9500 && scrollY < 12500 ? " sticky ":" relative"} */}
-          <div ref={maf} className=" overflow-hidden xl:pb-[20rem]">
+          <div ref={maf} className=" overflow-hidden xl:pb-[20rem] pt-[10rem]">
             <motion.div
-              className=" flex    h-[110vh]  relative"
+              className=" flex  w-full   h-[110vh]  relative z-[1000]"
               style={{ translateX: pd }}
             >
-              <div className=" pt-[7.5vh]   ">
+              <div className="   ">
                 <Circle />
               </div>
             </motion.div>

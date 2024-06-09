@@ -18,41 +18,42 @@ const Circle = () => {
     };
   }, [scrollYProgress]);
 
-  const ro = useTransform(scrollYProgress, [0.64, 1.3], ["0deg", "-360deg"]);
-  const rv = useTransform(scrollYProgress, [0.64, 1.4], ["0deg", "360deg"]);
-  const rv2 = useTransform(scrollYProgress, [0.64, 2], ["0deg", "360deg"]);
+  const r1 = useTransform(scrollYProgress, [0.1, 0.45], ["-280deg", "0deg"]);
+  const r2 = useTransform(scrollYProgress, [0.1, 0.45], ["150deg", "0deg"]);
+  const r3 = useTransform(scrollYProgress, [0.1, 0.45], ["-200deg", "0deg"]);
+  const r4 = useTransform(scrollYProgress, [0.1, 0.45], ["340deg", "0deg"]);
+  const r5 = useTransform(scrollYProgress, [0.1, 0.45], ["-340deg", "0deg"]);
 
-  const ro3 = useTransform(scrollYProgress, [0.64, 3], ["0deg", "-360deg"]);
 
   return (
     <div ref={maf} className="hidden xl:flex   ">
       <div className=" relative max-h-[390px] max-w-[390px] ">
         <div className="fl">
-          <motion.div className=" -translate-x-1/2 -translate-y-1/2 top-[50%] left-[50%]  absolute" style={{ rotate: ro }}>
+          <motion.div className="  absolute" style={{ rotate: r1 }}>
             <C1 />
           </motion.div>
           <motion.div
             className="absolute "
-            style={{ rotate: rv2 }}
+            style={{ rotate: r2 }}
           >
             <C2 />
           </motion.div>
         </div>
         <motion.div
           className=" flex items-center justify-center absolute"
-          style={{ rotate: ro3 }}
+          style={{ rotate: r3 }}
         >
           <C3 />
         </motion.div>
         <motion.div
           className=" flex items-center justify-center absolute"
-          style={{ rotate: rv }}
+          style={{ rotate: r4 }}
         >
           <C4 />
         </motion.div>
         <motion.div
           className=" flex items-center justify-center absolute"
-          style={{ rotate: rv2 }}
+          style={{ rotate: r5 }}
         >
           <C5 />
         </motion.div>
