@@ -321,7 +321,7 @@ const Project = () => {
             lable={"C#"}
             Heading={"Deep learning"}
             content={
-              "This project involves building a model to classify images into various categories using deep learning techniques. The model is trained on a dataset of labeled images and achieves high accuracy in prediction."
+              "This project involves building a model to classify images into various categories using deep learning techniques."
             }
           />
           <Detailscard
@@ -329,7 +329,7 @@ const Project = () => {
             lable={"Python"}
             Heading={"Deep learning"}
             content={
-              "This project involves building a model to classify images into various categories using deep learning techniques. The model is trained on a dataset of labeled images and achieves high accuracy in prediction."
+              "This project involves building a model to classify images into various categories using deep learning techniques."
             }
           />
         </div>
@@ -341,7 +341,7 @@ const Project = () => {
               lable={"AI/ML"}
               Heading={"Deep learning"}
               content={
-                "This project involves building a model to classify images into various categories using deep learning techniques. The model is trained on a dataset of labeled images and achieves high accuracy in prediction."
+                "This project involves building a model to classify images into various categories using deep learning techniques."
               }
             />
             <Detailscard
@@ -349,7 +349,7 @@ const Project = () => {
               lable={"AI/ML"}
               Heading={"Deep learning"}
               content={
-                "This project involves building a model to classify images into various categories using deep learning techniques. The model is trained on a dataset of labeled images and achieves high accuracy in prediction."
+                "This project involves building a model to classify images into various categories using deep learning techniques."
               }
             />
             <Detailscard
@@ -357,7 +357,7 @@ const Project = () => {
               lable={"AI/ML"}
               Heading={"Deep learning"}
               content={
-                "This project involves building a model to classify images into various categories using deep learning techniques. The model is trained on a dataset of labeled images and achieves high accuracy in prediction."
+                "This project involves building a model to classify images into various categories using deep learning techniques."
               }
             />
             <Detailscard
@@ -365,7 +365,7 @@ const Project = () => {
               lable={"AI/ML"}
               Heading={"Deep learning"}
               content={
-                "This project involves building a model to classify images into various categories using deep learning techniques. The model is trained on a dataset of labeled images and achieves high accuracy in prediction."
+                "This project involves building a model to classify images into various categories using deep learning techniques."
               }
             />
           </div>
@@ -378,7 +378,7 @@ const Project = () => {
               lable={"Automation"}
               Heading={"Deep learning"}
               content={
-                "This project involves building a model to classify images into various categories using deep learning techniques. The model is trained on a dataset of labeled images and achieves high accuracy in prediction."
+                "This project involves building a model to classify images into various categories using deep learning techniques."
               }
             />
             <Detailscard
@@ -386,7 +386,7 @@ const Project = () => {
               lable={"Automation"}
               Heading={"Deep learning"}
               content={
-                "This project involves building a model to classify images into various categories using deep learning techniques. The model is trained on a dataset of labeled images and achieves high accuracy in prediction."
+                "This project involves building a model to classify images into various categories using deep learning techniques."
               }
             />
             <Detailscard
@@ -394,7 +394,7 @@ const Project = () => {
               lable={"Automation"}
               Heading={"Deep learning"}
               content={
-                "This project involves building a model to classify images into various categories using deep learning techniques. The model is trained on a dataset of labeled images and achieves high accuracy in prediction."
+                "This project involves building a model to classify images into various categories using deep learning techniques."
               }
             />
             <Detailscard
@@ -402,7 +402,7 @@ const Project = () => {
               lable={"Automation"}
               Heading={"Deep learning"}
               content={
-                "This project involves building a model to classify images into various categories using deep learning techniques. The model is trained on a dataset of labeled images and achieves high accuracy in prediction."
+                "This project involves building a model to classify images into various categories using deep learning techniques."
               }
             />
           </div>
@@ -415,7 +415,7 @@ const Project = () => {
               lable={"Analysis"}
               Heading={"Deep learning"}
               content={
-                "This project involves building a model to classify images into various categories using deep learning techniques. The model is trained on a dataset of labeled images and achieves high accuracy in prediction."
+                "This project involves building a model to classify images into various categories using deep learning techniques."
               }
             />
             <Detailscard
@@ -423,7 +423,7 @@ const Project = () => {
               lable={"Analysis"}
               Heading={"Deep learning"}
               content={
-                "This project involves building a model to classify images into various categories using deep learning techniques. The model is trained on a dataset of labeled images and achieves high accuracy in prediction."
+                "This project involves building a model to classify images into various categories using deep learning techniques."
               }
             />
             <Detailscard
@@ -431,7 +431,7 @@ const Project = () => {
               lable={"Analysis"}
               Heading={"Deep learning"}
               content={
-                "This project involves building a model to classify images into various categories using deep learning techniques. The model is trained on a dataset of labeled images and achieves high accuracy in prediction."
+                "This project involves building a model to classify images into various categories using deep learning techniques."
               }
             />
             <Detailscard
@@ -439,7 +439,7 @@ const Project = () => {
               lable={"Analysis"}
               Heading={"Deep learning"}
               content={
-                "This project involves building a model to classify images into various categories using deep learning techniques. The model is trained on a dataset of labeled images and achieves high accuracy in prediction."
+                "This project involves building a model to classify images into various categories using deep learning techniques."
               }
             />
           </div>

@@ -1,10 +1,17 @@
+"use client"
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {motion} from "framer-motion"
 
 const Detailscard = ({ src, lable, Heading, content }) => {
+  const [isin,setisin]=useState()
+
+  
   return (
-    <div className="p-[0.7rem]   bg-[#ebe8e8]  rounded-2xl shadow-xl">
+    <motion.div
+    animate={{scale:isin? 1.2:1}}
+    transition={{duration:0.4,ease:"easeOut"}} 
+    onMouseEnter={()=>setisin(true)} onMouseLeave={()=>setisin(false)} className="p-[0.7rem]   bg-[#ebe8e8]  rounded-2xl shadow-xl">
       <div className="w-[full] h-[230px]   mb-5">
         <Image src={src} className=" object-cover rounded-xl h-[230px]" />
       </div>
@@ -50,7 +57,7 @@ const Detailscard = ({ src, lable, Heading, content }) => {
           <div className="text-[#FFFFFF] text-[1rem] font-Matter">View</div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
