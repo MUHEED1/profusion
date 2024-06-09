@@ -1,8 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Page99 = () => {
+  const [scrollY, setScrollY] = useState(0);
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <div className="bg-[#101010] text-[#BFEA88] font-Arg text-center pb-[15rem] hidden lg:block w-[36%] xl:mt-[100vh] xl:pr-[5.3vw] ">
+    <div
+      className={`  ${
+        scrollY > 4500 ? "bg-white" : "bg-[#101010]"
+      }  font-Arg text-center pb-[15rem] hidden lg:block w-[36%] xl:mt-[100vh] xl:pr-[5.3vw]  duration-1000`}
+    >
       <div className=" text-left">
         <div className="text-[37.5px] xl:text-[25px] font-style font-bold text-white font-Avant  leading-[2.3rem] xl:leading-[3rem]  xl:pr-[1.2vw]">
           Unleash Your Technological Potential
@@ -42,31 +59,31 @@ const Page99 = () => {
 
         <div className="max-h-[450px] max-w-[342.5px]  xl:min-h-[38vh] xl:min-w-full overflow-hidden"></div>
         <div className="  text-[#b6a1de] text-[11px] xl:text-[12.5px]">
-          <div className=" font-Avant text-[#5f2ccc] fontstyle leading-[4rem] text-[39px] xl:text-[56px] font-black pb-4 xl:pt-[3rem]">
+          <div className=" font-Avant text-white fontstyle leading-[4rem] text-[39px] xl:text-[56px] font-black pb-4 xl:pt-[3rem]">
             STAY CONNECTED
           </div>
-          <div className="  text-[#b6a1de] leading-[0.8rem]">
+          <div className="   text-[#bdbdbd] leading-[0.8rem]">
             FOR VERY OCCASIONAL AND UNPREDICTABLE NUGGETS OF USEFUL AND USELESS
             INFORMATION (IN EQUAL MEASURE), PLEASE FEEL FREE TO FOLLOW MY SOCIAL
             CHANNELS:
           </div>
-          <div className="flex justify-between pt-4 text-[#b6a1de] xl:pt-[3rem]">
+          <div className="flex justify-between pt-4 text-[#bdbdbd] xl:pt-[3rem]">
             <div>INSTAGRAM</div>
             <div>@PROFUSION</div>
           </div>
-          <div className="h-[0.8px] w-full bg-[#5f2ccc] my-[0.4rem]"></div>
-          <div className="flex justify-between ">
-            <div>AWWWARDS</div>
+          <div className="h-[0.8px] w-full bg-[#484848] my-[0.4rem]"></div>
+          <div className="flex justify-between  text-[#bdbdbd] ">
+            <div>TWITTER</div>
             <div>/PROFUSION</div>
           </div>
-          <div className="h-[0.8px] w-full bg-[#5f2ccc] my-[0.4rem]"></div>
-          <div className="flex justify-between">
+          <div className="h-[0.8px] w-full bg-[#484848] my-[0.4rem]"></div>
+          <div className="flex justify-between  text-[#bdbdbd]">
             <div>LINKEDIN</div>
             <div>/PROFUSION</div>
           </div>
-          <div className="h-[0.8px] w-full bg-[#5f2ccc] my-[0.4rem] "></div>
-          <div className=" flex justify-between ">
-            <div>DRIBBBLE</div>
+          <div className="h-[0.8px] w-full bg-[#484848] my-[0.4rem] "></div>
+          <div className=" flex justify-between  text-[#bdbdbd] ">
+            <div>FACEBOOK</div>
             <div>/PROFUSION</div>
           </div>
         </div>

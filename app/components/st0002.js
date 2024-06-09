@@ -1,12 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
-import pic from "@/public/images/circle/pic.jpg"
-import pic2 from "@/public/images/pic2.jpg"
+import React, { useEffect, useRef, useState } from "react";
+import pic from "@/public/images/pic.png"
+import pic2 from "@/public/images/pic2.png"
 import Marqueee from "./marquee";
 
 const St0002 = () => {
+  const ref = useRef()
   const [pas, setPas] = useState(false);
   const [pas2, setPas2] = useState(false);
   const [pas3, setPas3] = useState(false);
@@ -22,11 +23,11 @@ const St0002 = () => {
   const [pas21, setPas21] = useState(false);
 
   const [scrollY, setScrollY] = useState(0);
-  const [isMobile, setIsMobile] = useState(0);
-  const [isTab, setIsTab] = useState(0);
   useEffect(() => {
     const handleScroll = () => {
+
       setScrollY(window.scrollY);
+
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -37,30 +38,31 @@ const St0002 = () => {
     };
   }, []);
 
-  useEffect(() => {
-    if (scrollY > 700) {
-      setPas(true);
-    }
-    if (scrollY > 730) {
-      setPas2(true);
-    }
-    if (scrollY > 220) {
-      setPas3(true);
-    }
-    if (scrollY > 330) {
-      setPas4(true);
-    }
-    if (scrollY > 400) {
-      setPas5(true);
-    }
-    if (scrollY > 300) {
-      setPas(true);
-    }
-  }, [scrollY]);
+  // useEffect(() => {
+  //   if (scrollY > 700) {
+  //     setPas(true);
+  //   }
+  //   if (scrollY > 730) {
+  //     setPas2(true);
+  //   }
+  //   if (scrollY > 220) {
+  //     setPas3(true);
+  //   }
+  //   if (scrollY > 330) {
+  //     setPas4(true);
+  //   }
+  //   if (scrollY > 400) {
+  //     setPas5(true);
+  //   }
+  //   if (scrollY > 300) {
+  //     setPas(true);
+  //   }
+  // }, [scrollY]);
 
   return (
-    <div className="bg-white">
-      <div className="px-6 xl:px-16 bg-white py-40 flex gap-10 ">
+    <div ref={ref} className={` duration-1000  ${scrollY > 4500 ? "bg-white" : "bg-[#101010]"
+      } `}>
+      <div className="px-6 xl:px-16  py-40 flex gap-10 ">
         {/* <div
         className={`${scrollY > 300 ? "md:text-black" : "md:text-[#B8BEBE]"}`}
       >
@@ -240,29 +242,29 @@ const St0002 = () => {
         </div> */}
 
         {/* //small   bg */}
-        <div className="hidden  py-0 lg:flex  lg:text-[2.275rem]  lg:leading-none">
-          <div className=" flex flex-wrap gap-x-2 items-center sp ">
+        <div className="hidden  py-0 lg:block  lg:text-[2.275rem]  lg:leading-[2.9rem]">
+          <div className=" flex flex-wrap gap-x-2 items-center  sp ">
             <div
-              className={`${scrollY > 2340 ? "md:text-black" : "md:text-[#B8BEBE]"
+              className={`${scrollY > 4700 ? "md:text-black" : "md:text-[#B8BEBE]"
                 } `}
             >
               We{" "}
             </div>
             <div
-              className={`${scrollY > 2340 ? "md:text-black" : "md:text-[#B8BEBE]"
+              className={`${scrollY > 4720 ? "md:text-black" : "md:text-[#B8BEBE]"
                 } `}
             >
               {" "}curate{" "}
             </div>
             <div
-              className={`${scrollY > 2340 ? "md:text-black" : "md:text-[#B8BEBE]"
+              className={`${scrollY > 4740 ? "md:text-black" : "md:text-[#B8BEBE]"
                 } `}
             >
               {" "}an{" "}
             </div>
 
             <div
-              className={`${scrollY > 3330 || pas4
+              className={`${scrollY > 4760
                 ? " duration-500 text-black"
                 : " text-[#B8BEBE]"
                 }`}
@@ -271,7 +273,7 @@ const St0002 = () => {
               array{" "}
             </div>
             <div
-              className={`${scrollY > 3330 || pas4
+              className={`${scrollY > 4780
                 ? " duration-500 text-black"
                 : " text-[#B8BEBE]"
                 }`}
@@ -280,8 +282,8 @@ const St0002 = () => {
               of{" "}
             </div>
             <div
-              className={`       ${scrollY > 3330 || pas4
-                ? " rounded-full  duration-500   text-black"
+              className={`       ${scrollY > 4800
+                ? "   duration-500   text-black"
                 : " text-[#B8BEBE]"
                 }`}
             >
@@ -289,7 +291,7 @@ const St0002 = () => {
               insightful{" "}
             </div>
             <div
-              className={`${scrollY > 3330 || pas4
+              className={`${scrollY > 4820
                 ? " duration-500 text-black"
                 : " text-[#B8BEBE]"
                 }`}
@@ -298,7 +300,7 @@ const St0002 = () => {
               resources,{" "}
             </div>
             <div
-              className={`${scrollY > 3330 || pas4
+              className={`${scrollY > 4840
                 ? " duration-500 text-black"
                 : " text-[#B8BEBE]"
                 }`}
@@ -307,7 +309,7 @@ const St0002 = () => {
               guiding{" "}
             </div>
             <div
-              className={`${scrollY > 3330 || pas4
+              className={`${scrollY > 4860
                 ? " duration-500 text-black"
                 : " text-[#B8BEBE]"
                 }`}
@@ -316,7 +318,7 @@ const St0002 = () => {
               you{" "}
             </div>
             <div
-              className={`${scrollY > 3330 || pas4
+              className={`${scrollY > 4880
                 ? " duration-500 text-black"
                 : " text-[#B8BEBE]"
                 }`}
@@ -326,7 +328,7 @@ const St0002 = () => {
             </div>
 
             <div
-              className={`${scrollY > 3400 || pas5
+              className={`${scrollY > 4900
                 ? " duration-500 text-black"
                 : " text-[#B8BEBE]"
                 }`}
@@ -335,7 +337,7 @@ const St0002 = () => {
               innovative
             </div>
             <div
-              className={`${scrollY > 3400 || pas5
+              className={`${scrollY > 4920
                 ? " duration-500 text-black"
                 : " text-[#B8BEBE]"
                 }`}
@@ -344,7 +346,7 @@ const St0002 = () => {
               projects
             </div>{" "}
             <div
-              className={`${scrollY > 3400 || pas5
+              className={`${scrollY > 4940
                 ? " duration-500 text-black"
                 : " text-[#B8BEBE]"
                 }`}
@@ -353,7 +355,7 @@ const St0002 = () => {
               and
             </div>{" "}
             <div
-              className={`${scrollY > 3400 || pas5
+              className={`${scrollY > 4960
                 ? " duration-500 text-black"
                 : " text-[#B8BEBE]"
                 }`}
@@ -362,7 +364,7 @@ const St0002 = () => {
               cutting-edge
             </div>{" "}
             <div
-              className={`${scrollY > 3400 || pas5
+              className={`${scrollY > 4980
                 ? " duration-500 text-black"
                 : " text-[#B8BEBE]"
                 }`}
@@ -373,11 +375,11 @@ const St0002 = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-start flex-row-reverse gap-5 pb-40 w-full px-[3rem]">
+      <div className="flex items-start flex-row-reverse  pb-40 w-full px-[3rem]">
         <div className="w-[45%]  min-h-full "><Image className="min-h-full min-w-full object-fit" src={pic2} alt="" /></div>
-        <div className="flex flex-wrap w-[55%]  xl:text-[2.275rem]  xl:leading-[2.7rem] gap-x-4">
+        <div className="flex flex-wrap w-[55%] pr-10  xl:text-[2.275rem]  xl:leading-[2.9rem] gap-x-4">
           <div
-            className={`${scrollY > 3400 || pas5
+            className={`${scrollY > 5100
               ? " duration-500 text-black"
               : " text-[#B8BEBE]"
               }`}
@@ -386,7 +388,7 @@ const St0002 = () => {
             Our{" "}
           </div>
           <div
-            className={`${scrollY > 3400 || pas5
+            className={`${scrollY > 5120
               ? " duration-500 text-black"
               : " text-[#B8BEBE]"
               }`}
@@ -394,7 +396,7 @@ const St0002 = () => {
             {" "}
             roadmap{" "}
           </div> <div
-            className={`${scrollY > 3400 || pas5
+            className={`${scrollY > 5140
               ? " duration-500 text-black"
               : " text-[#B8BEBE]"
               }`}
@@ -402,7 +404,7 @@ const St0002 = () => {
             {" "}
             website{" "}
           </div> <div
-            className={`${scrollY > 3400 || pas5
+            className={`${scrollY > 5160
               ? " duration-500 text-black"
               : " text-[#B8BEBE]"
               }`}
@@ -410,7 +412,7 @@ const St0002 = () => {
             {" "}
             curates{" "}
           </div> <div
-            className={`${scrollY > 3400 || pas5
+            className={`${scrollY > 5180
               ? " duration-500 text-black"
               : " text-[#B8BEBE]"
               }`}
@@ -418,7 +420,7 @@ const St0002 = () => {
             {" "}
             insightful{" "}
           </div> <div
-            className={`${scrollY > 3400 || pas5
+            className={`${scrollY > 5200
               ? " duration-500 text-black"
               : " text-[#B8BEBE]"
               }`}
@@ -426,7 +428,7 @@ const St0002 = () => {
             {" "}
             resources{" "}
           </div> <div
-            className={`${scrollY > 3400 || pas5
+            className={`${scrollY > 5220
               ? " duration-500 text-black"
               : " text-[#B8BEBE]"
               }`}
@@ -434,7 +436,7 @@ const St0002 = () => {
             {" "}
             and{" "}
           </div> <div
-            className={`${scrollY > 3400 || pas5
+            className={`${scrollY > 5240
               ? " duration-500 text-black"
               : " text-[#B8BEBE]"
               }`}
@@ -442,7 +444,7 @@ const St0002 = () => {
             {" "}
             showcases{" "}
           </div> <div
-            className={`${scrollY > 3400 || pas5
+            className={`${scrollY > 5260
               ? " duration-500 text-black"
               : " text-[#B8BEBE]"
               }`}
@@ -450,7 +452,7 @@ const St0002 = () => {
             {" "}
             cutting-edge{" "}
           </div> <div
-            className={`${scrollY > 3400 || pas5
+            className={`${scrollY > 5280
               ? " duration-500 text-black"
               : " text-[#B8BEBE]"
               }`}
@@ -458,7 +460,7 @@ const St0002 = () => {
             {" "}
             advancements{" "}
           </div> <div
-            className={`${scrollY > 3400 || pas5
+            className={`${scrollY > 5300
               ? " duration-500 text-black"
               : " text-[#B8BEBE]"
               }`}
@@ -466,7 +468,7 @@ const St0002 = () => {
             {" "}
             like{" "}
           </div> <div
-            className={`${scrollY > 3400 || pas5
+            className={`${scrollY > 5320
               ? " duration-500 text-black"
               : " text-[#B8BEBE]"
               }`}
@@ -474,7 +476,7 @@ const St0002 = () => {
             {" "}
             AI{" "}
           </div> <div
-            className={`${scrollY > 3400 || pas5
+            className={`${scrollY > 5340
               ? " duration-500 text-black"
               : " text-[#B8BEBE]"
               }`}
@@ -483,7 +485,7 @@ const St0002 = () => {
             and{" "}
           </div>
           <div
-            className={`${scrollY > 3400 || pas5
+            className={`${scrollY > 5360
               ? " duration-500 text-black"
               : " text-[#B8BEBE]"
               }`}
@@ -492,7 +494,7 @@ const St0002 = () => {
             3D{" "}
           </div>
           <div
-            className={`${scrollY > 3400 || pas5
+            className={`${scrollY > 5380
               ? " duration-500 text-black"
               : " text-[#B8BEBE]"
               }`}
@@ -500,7 +502,7 @@ const St0002 = () => {
             {" "}
             printing.{" "}
           </div>  <div
-            className={`${scrollY > 3400 || pas5
+            className={`${scrollY > 5400
               ? " duration-500 text-black"
               : " text-[#B8BEBE]"
               }`}
@@ -508,7 +510,7 @@ const St0002 = () => {
             {" "}
             Explore{" "}
           </div>  <div
-            className={`${scrollY > 3400 || pas5
+            className={`${scrollY > 5420
               ? " duration-500 text-black"
               : " text-[#B8BEBE]"
               }`}
@@ -516,7 +518,7 @@ const St0002 = () => {
             {" "}
             groundbreaking{" "}
           </div>  <div
-            className={`${scrollY > 3400 || pas5
+            className={`${scrollY > 5440
               ? " duration-500 text-black"
               : " text-[#B8BEBE]"
               }`}
@@ -524,7 +526,7 @@ const St0002 = () => {
             {" "}
             projects {" "}
           </div>  <div
-            className={`${scrollY > 3400 || pas5
+            className={`${scrollY > 5460
               ? " duration-500 text-black"
               : " text-[#B8BEBE]"
               }`}
@@ -532,7 +534,7 @@ const St0002 = () => {
             {" "}
             and{" "}
           </div>  <div
-            className={`${scrollY > 3400 || pas5
+            className={`${scrollY > 5480
               ? " duration-500 text-black"
               : " text-[#B8BEBE]"
               }`}
@@ -540,7 +542,7 @@ const St0002 = () => {
             {" "}
             navigate{" "}
           </div>  <div
-            className={`${scrollY > 3400 || pas5
+            className={`${scrollY > 5500
               ? " duration-500 text-black"
               : " text-[#B8BEBE]"
               }`}
@@ -548,7 +550,7 @@ const St0002 = () => {
             {" "}
             the{" "}
           </div>  <div
-            className={`${scrollY > 3400 || pas5
+            className={`${scrollY > 5520
               ? " duration-500 text-black"
               : " text-[#B8BEBE]"
               }`}
@@ -556,7 +558,7 @@ const St0002 = () => {
             {" "}
             exciting {" "}
           </div>  <div
-            className={`${scrollY > 3400 || pas5
+            className={`${scrollY > 5540
               ? " duration-500 text-black"
               : " text-[#B8BEBE]"
               }`}
@@ -565,7 +567,7 @@ const St0002 = () => {
             potential{" "}
           </div>
           <div
-            className={`${scrollY > 3400 || pas5
+            className={`${scrollY > 5560
               ? " duration-500 text-black"
               : " text-[#B8BEBE]"
               }`}
@@ -573,7 +575,7 @@ const St0002 = () => {
             {" "}
             of{" "}
           </div> <div
-            className={`${scrollY > 3400 || pas5
+            className={`${scrollY > 5580
               ? " duration-500 text-black"
               : " text-[#B8BEBE]"
               }`}
@@ -581,7 +583,7 @@ const St0002 = () => {
             {" "}
             these{" "}
           </div> <div
-            className={`${scrollY > 3400 || pas5
+            className={`${scrollY > 5600
               ? " duration-500 text-black"
               : " text-[#B8BEBE]"
               }`}
@@ -589,7 +591,7 @@ const St0002 = () => {
             {" "}
             technologies,{" "}
           </div> <div
-            className={`${scrollY > 3400 || pas5
+            className={`${scrollY > 5620
               ? " duration-500 text-black"
               : " text-[#B8BEBE]"
               }`}
@@ -598,7 +600,7 @@ const St0002 = () => {
             fostering {" "}
           </div>
           <div
-            className={`${scrollY > 3400 || pas5
+            className={`${scrollY > 5640
               ? " duration-500 text-black"
               : " text-[#B8BEBE]"
               }`}
@@ -606,7 +608,7 @@ const St0002 = () => {
             {" "}
             a{" "}
           </div><div
-            className={`${scrollY > 3400 || pas5
+            className={`${scrollY > 5660
               ? " duration-500 text-black"
               : " text-[#B8BEBE]"
               }`}
@@ -614,7 +616,7 @@ const St0002 = () => {
             {" "}
             responsible{" "}
           </div><div
-            className={`${scrollY > 3400 || pas5
+            className={`${scrollY > 5680
               ? " duration-500 text-black"
               : " text-[#B8BEBE]"
               }`}
@@ -622,7 +624,7 @@ const St0002 = () => {
             {" "}
             future {" "}
           </div><div
-            className={`${scrollY > 3400 || pas5
+            className={`${scrollY > 5700
               ? " duration-500 text-black"
               : " text-[#B8BEBE]"
               }`}
