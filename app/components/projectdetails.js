@@ -45,7 +45,7 @@ const Projectdetails = () => {
           Roadmap
         </div>
         <div className="flex justify-center pt-[0.4rem] pb-[8rem]">
-          <div className="bg-[#9393934D] rounded-[999px] px-[0.7rem] py-[0.5rem] flex justify-center items-center w-[13%] ">
+          <div className="bg-[#9393934D] rounded-[999px] px-[0.7rem] py-[0.5rem] flex justify-center items-center w-max ">
             <div className=" font-Matter text-[14px] text-[#E2E2E2] ">
               Python Windows V3.10.0
             </div>
